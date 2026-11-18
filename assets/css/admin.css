@@ -134,7 +134,13 @@
 
 .admin-sidebar__ext,
 .admin-sidebar__logout {
-    color: #93C5FD;
+    color: #BFDBFE;
+}
+
+.admin-sidebar__ext:hover,
+.admin-sidebar__logout:hover {
+    color: var(--blanco);
+    text-decoration: underline;
 }
 
 .admin-topbar {

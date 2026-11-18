@@ -10,7 +10,7 @@ use App\Core\Icon;
 
 $preServ = $preselectedService ?? '';
 $prePlan = $preselectedPlan ?? '';
-$agendaUrl = trim((string)($settings['agenda_url'] ?? ''));
+$agendaUrl = trim((string) ($settings['agenda_url'] ?? ''));
 ?>
 <?= View::partial('breadcrumbs', ['seo' => $seo]) ?>
 
@@ -20,11 +20,13 @@ $agendaUrl = trim((string)($settings['agenda_url'] ?? ''));
             <span class="eyebrow">CONTACTO ÁGIL · EN MENOS DE 1 MINUTO</span>
             <h1 class="contact-page__title">Contanos qué necesita tu pyme</h1>
             <p class="contact-page__lead">
-                Completá los 3 pasos rápidos o escribinos directo por WhatsApp. <strong><?= View::e($settings['tiempo_respuesta'] ?? 'Te respondo en menos de 24 horas hábiles') ?></strong>.
+                Completá los 3 pasos rápidos o escribinos directo por WhatsApp.
+                <strong><?= View::e($settings['tiempo_respuesta'] ?? 'Te respondo en menos de 24 horas hábiles') ?></strong>.
             </p>
 
             <div class="contact-direct-cards">
-                <a href="<?= View::e(View::whatsappUrl($whatsappMessage ?? '')) ?>" target="_blank" rel="noopener" class="contact-channel-card" data-track="whatsapp">
+                <a href="<?= View::e(View::whatsappUrl($whatsappMessage ?? '')) ?>" target="_blank" rel="noopener"
+                    class="contact-channel-card" data-track="whatsapp">
                     <span class="contact-channel-card__icon"><?= Icon::get('whatsapp', 24) ?></span>
                     <div>
                         <strong>WhatsApp directo</strong>
@@ -32,7 +34,8 @@ $agendaUrl = trim((string)($settings['agenda_url'] ?? ''));
                     </div>
                 </a>
 
-                <a href="mailto:<?= View::e($settings['email_contacto'] ?? 'carnellistudio2026@gmail.com') ?>" class="contact-channel-card" data-track="email">
+                <a href="mailto:<?= View::e($settings['email_contacto'] ?? 'carnellistudio2026@gmail.com') ?>"
+                    class="contact-channel-card" data-track="email">
                     <span class="contact-channel-card__icon"><?= Icon::get('mail', 24) ?></span>
                     <div>
                         <strong>Correo electrónico</strong>
@@ -41,20 +44,24 @@ $agendaUrl = trim((string)($settings['agenda_url'] ?? ''));
                 </a>
 
                 <?php if ($agendaUrl !== '' && !str_contains($agendaUrl, '[COMPLETAR')): ?>
-                <a href="<?= View::e($agendaUrl) ?>" target="_blank" rel="noopener" class="contact-channel-card" data-track="schedule">
-                    <span class="contact-channel-card__icon"><?= Icon::get('calendar', 24) ?></span>
-                    <div>
-                        <strong>Agendar videollamada</strong>
-                        <span>Elegí día y horario directamente en mi agenda</span>
-                    </div>
-                </a>
+                    <a href="<?= View::e($agendaUrl) ?>" target="_blank" rel="noopener" class="contact-channel-card"
+                        data-track="schedule">
+                        <span class="contact-channel-card__icon"><?= Icon::get('calendar', 24) ?></span>
+                        <div>
+                            <strong>Agendar videollamada</strong>
+                            <span>Elegí día y horario directamente en mi agenda</span>
+                        </div>
+                    </a>
                 <?php endif; ?>
             </div>
 
             <div class="contact-location-box">
                 <h3>📍 Cobertura de atención</h3>
-                <p><strong>Presencial:</strong> <?= View::e($settings['ubicacion_presencial'] ?? 'Ciudad de la Costa (Canelones)') ?>.</p>
-                <p><strong>Remoto:</strong> <?= View::e($settings['ubicacion_remota'] ?? 'Todo Uruguay por videollamada') ?> (reunión inicial, presupuesto y seguimiento).</p>
+                <p><strong>Presencial:</strong>
+                    <?= View::e($settings['ubicacion_presencial'] ?? 'Ciudad de la Costa (Canelones)') ?>.</p>
+                <p><strong>Remoto:</strong>
+                    <?= View::e($settings['ubicacion_remota'] ?? 'Todo Uruguay por videollamada') ?> (reunión inicial,
+                    presupuesto y seguimiento).</p>
             </div>
         </div>
 
@@ -72,7 +79,8 @@ $agendaUrl = trim((string)($settings['agenda_url'] ?? ''));
                     </div>
                 </div>
 
-                <form action="<?= View::url('contacto/enviar') ?>" method="POST" id="contact-wizard-form" data-form="lead" novalidate>
+                <form action="<?= View::url('contacto/enviar') ?>" method="POST" id="contact-wizard-form"
+                    data-form="lead" novalidate>
                     <?= Csrf::field() ?>
                     <input type="hidden" name="form_started_at" value="<?= time() ?>">
                     <input type="hidden" name="pagina_origen" value="/contacto">
@@ -90,7 +98,8 @@ $agendaUrl = trim((string)($settings['agenda_url'] ?? ''));
                     <!-- PASO 1: ¿Qué necesitás? -->
                     <fieldset class="wizard-step is-active" data-step="1">
                         <legend class="wizard-step__title">Paso 1: ¿Qué necesita hoy tu pyme?</legend>
-                        <p class="wizard-step__desc">Podés elegir uno o varios servicios (si no estás seguro, marcá asesoramiento).</p>
+                        <p class="wizard-step__desc">Podés elegir uno o varios servicios (si no estás seguro, marcá
+                            asesoramiento).</p>
 
                         <?php if ($prePlan !== ''): ?>
                             <div class="preselected-banner">
@@ -104,20 +113,17 @@ $agendaUrl = trim((string)($settings['agenda_url'] ?? ''));
                                 $checked = ($preServ !== '' && mb_strtolower($preServ) === mb_strtolower($s['nombre']));
                                 ?>
                                 <label class="chip-checkbox">
-                                    <input
-                                        type="checkbox"
-                                        name="servicios_interes[]"
-                                        value="<?= View::e($s['nombre']) ?>"
-                                        <?= $checked ? 'checked' : '' ?>
-                                    >
+                                    <input type="checkbox" name="servicios_interes[]" value="<?= View::e($s['nombre']) ?>"
+                                        <?= $checked ? 'checked' : '' ?>>
                                     <span class="chip-checkbox__box">
-                                        <small class="chip-checkbox__layer">Capa <?= (int)$s['capa'] ?></small>
+                                        <small class="chip-checkbox__layer">Capa <?= (int) $s['capa'] ?></small>
                                         <strong><?= View::e($s['nombre']) ?></strong>
                                     </span>
                                 </label>
                             <?php endforeach; ?>
                             <label class="chip-checkbox">
-                                <input type="checkbox" name="servicios_interes[]" value="Quiero asesoramiento para elegir" <?= $preServ === '' ? 'checked' : '' ?>>
+                                <input type="checkbox" name="servicios_interes[]"
+                                    value="Quiero asesoramiento para elegir" <?= $preServ === '' ? 'checked' : '' ?>>
                                 <span class="chip-checkbox__box">
                                     <small class="chip-checkbox__layer">Ayuda</small>
                                     <strong>No estoy seguro, quiero asesoramiento</strong>
@@ -137,31 +143,40 @@ $agendaUrl = trim((string)($settings['agenda_url'] ?? ''));
                     <!-- PASO 2: Tu negocio -->
                     <fieldset class="wizard-step" data-step="2">
                         <legend class="wizard-step__title">Paso 2: Contanos sobre tu negocio</legend>
-                        <p class="wizard-step__desc">Con esto preparo ideas concretas antes de nuestra primera charla.</p>
+                        <p class="wizard-step__desc">Con esto preparo ideas concretas antes de nuestra primera charla.
+                        </p>
 
                         <div class="form-group">
                             <label for="wiz_negocio" class="form-label">Nombre de tu negocio o emprendimiento *</label>
-                            <input type="text" id="wiz_negocio" name="negocio" class="form-input" placeholder="Ej: Repuestos del Litoral / Impresos..." required>
+                            <input type="text" id="wiz_negocio" name="negocio" class="form-input"
+                                placeholder="Ej: Carnelli Studio..." required>
                         </div>
 
                         <div class="form-group">
                             <label for="wiz_rubro" class="form-label">¿A qué rubro se dedican?</label>
-                            <input type="text" id="wiz_rubro" name="rubro" class="form-input" placeholder="Ej: Comercio, gastronomía, servicios profesionales, industria...">
+                            <input type="text" id="wiz_rubro" name="rubro" class="form-input"
+                                placeholder="Ej: Comercio, gastronomía, servicios profesionales, industria...">
                         </div>
 
                         <div class="form-group">
                             <label for="wiz_situacion" class="form-label">¿Cómo están hoy en lo digital?</label>
                             <select id="wiz_situacion" name="situacion_actual" class="form-select">
-                                <option value="Tenemos redes pero queremos vender más o sistematizar">Tenemos redes activas pero queremos dar el salto (web, tienda o sistema)</option>
-                                <option value="Tenemos web o tienda pero no da resultados">Ya tenemos web o tienda online pero queremos mejorarla</option>
-                                <option value="Recién empezamos / queremos ordenar todo desde cero">Estamos arrancando o queremos ordenar todo desde cero</option>
-                                <option value="Buscamos automatizar procesos o un sistema a medida">Necesitamos ordenar pedidos, procesos internos o IA</option>
+                                <option value="Tenemos redes pero queremos vender más o sistematizar">Tenemos redes
+                                    activas pero queremos dar el salto (web, tienda o sistema)</option>
+                                <option value="Tenemos web o tienda pero no da resultados">Ya tenemos web o tienda
+                                    online pero queremos mejorarla</option>
+                                <option value="Recién empezamos / queremos ordenar todo desde cero">Estamos arrancando o
+                                    queremos ordenar todo desde cero</option>
+                                <option value="Buscamos automatizar procesos o un sistema a medida">Necesitamos ordenar
+                                    pedidos, procesos internos o IA</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="wiz_mensaje" class="form-label">¿Algún detalle o idea puntual que quieras contarme? (opcional)</label>
-                            <textarea id="wiz_mensaje" name="mensaje" rows="3" class="form-textarea" placeholder="Contame qué te gustaría lograr o qué problema querés sacarte de encima..."></textarea>
+                            <label for="wiz_mensaje" class="form-label">¿Algún detalle o idea puntual que quieras
+                                contarme? (opcional)</label>
+                            <textarea id="wiz_mensaje" name="mensaje" rows="3" class="form-textarea"
+                                placeholder="Contame qué te gustaría lograr o qué problema querés sacarte de encima..."></textarea>
                         </div>
 
                         <div class="wizard-nav">
@@ -180,17 +195,20 @@ $agendaUrl = trim((string)($settings['agenda_url'] ?? ''));
 
                         <div class="form-group">
                             <label for="wiz_nombre" class="form-label">Tu nombre y apellido *</label>
-                            <input type="text" id="wiz_nombre" name="nombre" class="form-input" placeholder="Ej: Laura Gómez" required>
+                            <input type="text" id="wiz_nombre" name="nombre" class="form-input"
+                                placeholder="Ej: Laura Gómez" required>
                         </div>
 
                         <div class="form-row-2">
                             <div class="form-group">
                                 <label for="wiz_whatsapp" class="form-label">Tu WhatsApp / Celular *</label>
-                                <input type="tel" id="wiz_whatsapp" name="whatsapp" class="form-input" placeholder="Ej: 099 123 456" required>
+                                <input type="tel" id="wiz_whatsapp" name="whatsapp" class="form-input"
+                                    placeholder="Ej: 099 123 456" required>
                             </div>
                             <div class="form-group">
                                 <label for="wiz_email" class="form-label">Tu Email</label>
-                                <input type="email" id="wiz_email" name="email" class="form-input" placeholder="tu@correo.com">
+                                <input type="email" id="wiz_email" name="email" class="form-input"
+                                    placeholder="tu@correo.com">
                             </div>
                         </div>
 
@@ -217,7 +235,8 @@ $agendaUrl = trim((string)($settings['agenda_url'] ?? ''));
                         </div>
 
                         <p class="form-legal-note">
-                            Tus datos están protegidos bajo la <a href="<?= View::url('politica-de-privacidad') ?>">Ley N° 18.331</a> y solo los uso para responder a tu consulta.
+                            Tus datos están protegidos bajo la <a href="<?= View::url('politica-de-privacidad') ?>">Ley
+                                N° 18.331</a> y solo los uso para responder a tu consulta.
                         </p>
 
                         <div class="wizard-nav">
@@ -233,4 +252,3 @@ $agendaUrl = trim((string)($settings['agenda_url'] ?? ''));
         </div>
     </div>
 </section>
-

@@ -46,7 +46,7 @@
         "titulo": "Repuestos del Litoral: Redes sociales, tienda online con pasarela y Google Maps",
         "cliente_id": 2,
         "cliente_nombre": "Repuestos del Litoral",
-        "rubro": "Repuestos y Automotriz",
+        "rubro": "Repuestos y reparación de máquinas",
         "anio": 2026,
         "servicios_ids": [
             1,
@@ -126,7 +126,7 @@
         "titulo": "Piscinas Fiji: Landing page comercial y asesoramiento digital",
         "cliente_id": 4,
         "cliente_nombre": "Piscinas Fiji",
-        "rubro": "Piscinas y Exteriores",
+        "rubro": "Piscinas y Spa",
         "anio": 2026,
         "servicios_ids": [
             7,
