@@ -1140,6 +1140,21 @@
     margin-top: 1.25rem;
 }
 
+.about-hero__photo-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.about-hero__photo {
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 4px solid var(--blanco);
+}
+
 .founder-card-placeholder {
     background: var(--azul-suave);
     border: 2px solid var(--azul-borde);

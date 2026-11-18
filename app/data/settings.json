@@ -116,7 +116,7 @@
     {
         "id": 20,
         "clave": "foto_fundador",
-        "valor": "",
+        "valor": "assets/brand/alex-carnelli.webp",
         "grupo": "general"
     },
     {

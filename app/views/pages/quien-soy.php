@@ -27,7 +27,7 @@ $fotoFundador = trim((string)($settings['foto_fundador'] ?? ''));
 
         <div class="about-hero__photo-wrap">
             <?php if ($fotoFundador !== '' && !str_contains($fotoFundador, '[COMPLETAR')): ?>
-                <img src="<?= View::asset($fotoFundador) ?>" alt="Alex Carnelli — Fundador de Carnelli Studio" class="about-hero__photo" width="420" height="480">
+                <img src="<?= View::asset($fotoFundador) ?>" alt="Alex Carnelli — Fundador de Carnelli Studio" class="about-hero__photo" width="420" height="420" fetchpriority="high">
             <?php else: ?>
                 <div class="founder-card-placeholder">
                     <img src="<?= View::asset('assets/brand/carnelli-isotipo-color-transparente.svg') ?>" alt="Carnelli Studio" width="96" height="96">

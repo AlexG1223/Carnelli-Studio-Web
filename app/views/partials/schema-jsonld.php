@@ -78,6 +78,7 @@ $graph = [
         'name'  => 'Alex Carnelli',
         'jobTitle' => 'Fundador y Desarrollador Full-Stack',
         'url'   => View::url('quien-soy'),
+        'image' => View::asset('assets/brand/alex-carnelli.webp', false),
         'worksFor' => [
             '@id' => $siteUrl . '/#organization'
         ],
