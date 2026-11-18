@@ -20,32 +20,11 @@ use App\Core\Icon;
 
 <section class="section">
     <div class="container">
-        <!-- Filtros animados por servicio (accesibles con teclado y fallback URL para SEO) -->
-        <div class="portfolio-filters" role="region" aria-label="Filtrar proyectos por servicio">
-            <a
-                href="<?= View::url('proyectos') ?>"
-                class="filter-pill <?= empty($filtroActual) ? 'is-active' : '' ?>"
-                data-filter-slug="todos"
-            >
-                Todos los proyectos
-            </a>
-            <?php foreach (($serviciosFiltro ?? []) as $srv): ?>
-                <a
-                    href="<?= View::url('proyectos?servicio=' . urlencode($srv['slug'])) ?>"
-                    class="filter-pill <?= ($filtroActual ?? '') === $srv['slug'] ? 'is-active' : '' ?>"
-                    data-filter-slug="<?= View::e($srv['slug']) ?>"
-                >
-                    <?= View::e($srv['nombre']) ?>
-                </a>
-            <?php endforeach; ?>
-        </div>
-
-        <div class="projects-grid" id="portfolio-grid" aria-live="polite">
+        <div class="projects-grid" id="portfolio-grid">
             <?php if (empty($proyectos)): ?>
                 <div class="empty-state">
-                    <h3>Todavía no cargamos casos públicos con ese filtro puntual</h3>
-                    <p>Podés ver todos nuestros casos de estudio o consultarnos directamente por tu proyecto.</p>
-                    <a href="<?= View::url('proyectos') ?>" class="btn btn--outline">Ver todos los proyectos</a>
+                    <h3>Todavía no hay proyectos publicados</h3>
+                    <p>Consultanos directamente para conocer más casos o pedir un presupuesto para tu negocio.</p>
                 </div>
             <?php else: ?>
                 <?php foreach ($proyectos as $proyecto): ?>

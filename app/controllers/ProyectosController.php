@@ -17,8 +17,6 @@ class ProyectosController extends Controller
 {
     public function index(): void
     {
-        $filtroSlug = trim((string)($_GET['servicio'] ?? ''));
-
         $this->seo
             ->setTitle('Proyectos y Casos de Estudio de Pymes en Uruguay')
             ->setDescription('Mirá los proyectos reales realizados por Carnelli Studio: tiendas online con pasarela de pago, landing pages, sistemas de gestión de pedidos y redes sociales.')
@@ -27,14 +25,8 @@ class ProyectosController extends Controller
                 ['label' => 'Proyectos', 'url' => 'proyectos']
             ]);
 
-        $proyectos = $filtroSlug !== ''
-            ? Proyecto::byServiceSlug($filtroSlug)
-            : Proyecto::published();
-
         $this->render('pages/proyectos/index', [
-            'proyectos'       => $proyectos,
-            'serviciosFiltro' => Servicio::active(),
-            'filtroActual'    => $filtroSlug,
+            'proyectos'       => Proyecto::published(),
             'whatsappMessage' => 'Hola Alex, estuve viendo el portfolio de proyectos de Carnelli Studio y quiero consultar por un proyecto para mi negocio.',
         ]);
     }

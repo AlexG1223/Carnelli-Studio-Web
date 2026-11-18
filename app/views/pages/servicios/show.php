@@ -112,7 +112,7 @@ $capa = (int)($servicio['capa'] ?? 1);
                     <span class="eyebrow">CASOS DE ESTUDIO VINCULADOS</span>
                     <h2 class="section-title">Proyectos reales donde aplicamos este servicio</h2>
                 </div>
-                <a href="<?= View::url('proyectos?servicio=' . urlencode($servicio['slug'])) ?>" class="btn btn--outline">Ver portfolio completo →</a>
+                <a href="<?= View::url('proyectos') ?>" class="btn btn--outline">Ver portfolio completo →</a>
             </div>
             <div class="projects-grid">
                 <?php foreach ($proyectosRelacionados as $p): ?>
