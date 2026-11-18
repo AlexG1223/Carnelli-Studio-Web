@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "pregunta": "¿Atienden fuera de Canelones o en el interior de Uruguay?",
+        "respuesta": "Sí. Trabajamos de forma remota con pymes de todo Uruguay mediante videollamada para la reunión inicial, la presentación del presupuesto y el seguimiento continuo. Además, si estás en Ciudad de la Costa (Canelones), podemos coordinar reuniones presenciales.",
+        "categoria": "general",
+        "servicio_id": null,
+        "mostrar_en_home": 1,
+        "orden": 1,
+        "activo": 1
+    },
+    {
+        "id": 2,
+        "pregunta": "¿Realmente necesito una página web o tienda online si ya vendo por Instagram?",
+        "respuesta": "Instagram es una vidriera excelente para que te conozcan, pero no te pertenece y obliga al cliente a preguntarte precios y disponibilidad por privado. Una web o tienda online te permite aparecer cuando alguien busca tu rubro en Google o en inteligencias artificiales, mostrar tu catálogo ordenado y cobrar las 24 horas con Mercado Pago sin depender de estar conectado.",
+        "categoria": "servicios",
+        "servicio_id": 7,
+        "mostrar_en_home": 1,
+        "orden": 2,
+        "activo": 1
+    },
+    {
+        "id": 3,
+        "pregunta": "¿Cómo es la forma de trabajo y cómo se define el presupuesto?",
+        "respuesta": "Trabajamos en 4 pasos claros: primero tenemos una llamada o videollamada sin costo para entender qué necesita hoy tu negocio; segundo, armamos un presupuesto 100% a medida (no cobramos paquetes rígidos con cosas que no vas a usar); tercero, ejecutamos el proyecto adaptándonos si tus necesidades cambian; y cuarto, entregamos todo funcionando y nos encargamos del mantenimiento posterior.",
+        "categoria": "proceso",
+        "servicio_id": null,
+        "mostrar_en_home": 1,
+        "orden": 3,
+        "activo": 1
+    },
+    {
+        "id": 4,
+        "pregunta": "¿Con quién hablo durante el proyecto?",
+        "respuesta": "Hablás siempre directo conmigo (Alex Carnelli). No hay vendedores intermediarios ni teléfonos descompuestos: la misma persona que te escucha en la primera reunión es quien diseña la estrategia, programa tu web o sistema y te acompaña después.",
+        "categoria": "general",
+        "servicio_id": null,
+        "mostrar_en_home": 1,
+        "orden": 4,
+        "activo": 1
+    },
+    {
+        "id": 5,
+        "pregunta": "¿Qué pasa después de que entregan la web, tienda online o sistema?",
+        "respuesta": "No te dejamos solo con una clave de acceso. Ofrecemos mantenimiento técnico y evolutivo continuo para que tu sitio web, tienda online o sistema a medida esté siempre seguro, actualizado y puedas pedir ajustes o mejoras cuando tu negocio lo necesite.",
+        "categoria": "proceso",
+        "servicio_id": 8,
+        "mostrar_en_home": 1,
+        "orden": 5,
+        "activo": 1
+    },
+    {
+        "id": 6,
+        "pregunta": "¿Cuándo le conviene a una pyme hacer un sistema a medida o automatizar con IA?",
+        "respuesta": "Cuando sentís que se te va el día pasando datos de WhatsApp a planillas, cuando no sabés en qué estado está cada pedido o cuando respondés una y otra vez las mismas preguntas. Empezamos ordenando tu circuito actual y automatizamos o creamos el sistema justo para destrabar ese cuello de botella.",
+        "categoria": "servicios",
+        "servicio_id": 9,
+        "mostrar_en_home": 1,
+        "orden": 6,
+        "activo": 1
+    },
+    {
+        "id": 7,
+        "pregunta": "¿Las tiendas online se pueden cobrar con Mercado Pago en Uruguay?",
+        "respuesta": "Sí, dejamos tu tienda online integrada con Mercado Pago Uruguay (tarjetas de crédito en cuotas, débito y redes de cobranza), además de opciones como transferencia bancaria o pago al retirar en el local.",
+        "categoria": "servicios",
+        "servicio_id": 8,
+        "mostrar_en_home": 0,
+        "orden": 7,
+        "activo": 1
+    },
+    {
+        "id": 8,
+        "pregunta": "¿Para la edición de Reels y redes ustedes van a sacar fotos o filmar al local?",
+        "respuesta": "No realizamos sesiones de fotos ni rodajes presenciales. Te damos una guía práctica muy simple para que grabes tomas cortas o saques fotos con tu celular en el día a día de tu negocio, y nosotros nos encargamos de toda la edición profesional, subtítulos dinámicos, diseño gráfico y publicación.",
+        "categoria": "servicios",
+        "servicio_id": 2,
+        "mostrar_en_home": 0,
+        "orden": 8,
+        "activo": 1
+    }
+]

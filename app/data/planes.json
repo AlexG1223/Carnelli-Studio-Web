@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "slug": "arranque",
+        "nombre": "Arranque",
+        "subtitulo": "Capa 1 · Presencia ordenada y visibilidad local",
+        "ideal_para": "Ideal para comercios y pymes que necesitan ordenar sus redes sociales, verse profesionales y aparecer cuando los buscan en Google Maps.",
+        "capas_incluidas": "Capa 1 — Marketing y presencia digital",
+        "items_incluidos": [
+            "Optimización completa de perfil de Instagram y Facebook",
+            "Planificación y gestión mensual de redes sociales",
+            "Edición de piezas gráficas y Reels a partir de tu material",
+            "Alta, verificación y optimización en Google Maps (Perfil de Empresa)",
+            "Configuración profesional de WhatsApp Business",
+            "Reunión mensual de seguimiento directo con Alex"
+        ],
+        "texto_cta": "Pedí tu presupuesto",
+        "destacado": 0,
+        "orden": 1,
+        "activo": 1
+    },
+    {
+        "id": 2,
+        "slug": "crecimiento",
+        "nombre": "Crecimiento",
+        "subtitulo": "Capa 1 + Web / Tienda Online · Captación activa de clientes",
+        "ideal_para": "El más elegido por pymes en marcha que quieren vender online o tener una web que convierta visitas en consultas todos los días.",
+        "capas_incluidas": "Capa 1 + Sitio Web o Tienda Online",
+        "items_incluidos": [
+            "Sitio Web a medida, Landing Page o Tienda Online (con Mercado Pago)",
+            "Gestión de redes sociales y edición de contenido mensual",
+            "Campañas publicitarias en Meta Ads y/o Google Ads",
+            "Optimización SEO técnica + GEO (motores de IA) y Google Maps",
+            "Medición de conversiones con Google Analytics 4",
+            "Mantenimiento técnico web y soporte continuo incluido"
+        ],
+        "texto_cta": "Pedí tu presupuesto",
+        "destacado": 1,
+        "orden": 2,
+        "activo": 1
+    },
+    {
+        "id": 3,
+        "slug": "transformacion",
+        "nombre": "Transformación",
+        "subtitulo": "Capa 1 + Capa 2 Completa · Marketing + Sistemas e IA",
+        "ideal_para": "Pensado para pymes que además de atraer más clientes quieren ordenar toda su operación interna, pedidos y procesos con tecnología propia.",
+        "capas_incluidas": "Capa 1 + Capa 2 (Sistemas a medida, Automatización e IA)",
+        "items_incluidos": [
+            "Estrategia integral de captación (Web / E-commerce + Redes + Ads + SEO/GEO)",
+            "Desarrollo de Sistema Web a medida (ej. gestión de pedidos de punta a punta)",
+            "Organización y sistematización de procesos internos del negocio",
+            "Automatización de tareas repetitivas e inteligencia artificial aplicada",
+            "Consultoría personalizada 1 a 1 y acompañamiento estratégico",
+            "Mantenimiento prioritario y evolución continua de tus sistemas"
+        ],
+        "texto_cta": "Pedí tu presupuesto",
+        "destacado": 0,
+        "orden": 3,
+        "activo": 1
+    }
+]

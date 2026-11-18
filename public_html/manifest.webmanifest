@@ -1,0 +1,29 @@
+{
+  "name": "Carnelli Studio — Agencia de Transformación Digital",
+  "short_name": "Carnelli Studio",
+  "description": "Diseñamos el crecimiento digital de tu pyme en Uruguay: marketing digital, sitios web, tiendas online y sistemas con IA.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "theme_color": "#0D3B8C",
+  "lang": "es-UY",
+  "icons": [
+    {
+      "src": "assets/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/brand/carnelli-favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

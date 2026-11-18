@@ -1,0 +1,20 @@
+# .htaccess raíz para desarrollo local en XAMPP (http://localhost/carnelliStudioWeb/)
+Options -Indexes -MultiViews
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Bloquear acceso directo por navegador a la carpeta app/
+    RewriteRule ^app(/|$) - [F,L]
+
+    # Redirigir assets, uploads, manifest y favicon a public_html/
+    RewriteRule ^(assets|uploads)/(.*)$ public_html/$1/$2 [L]
+    RewriteRule ^(favicon\.ico|manifest\.webmanifest)$ public_html/$1 [L]
+
+    # Si el archivo existe en public_html, servirlo
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
+

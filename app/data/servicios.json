@@ -1,0 +1,376 @@
+[
+    {
+        "id": 1,
+        "slug": "gestion-de-redes-sociales",
+        "nombre": "Gestión de redes sociales",
+        "capa": 1,
+        "subtitulo_corto": "Tu marca activa, ordenada y profesional en Instagram y Facebook sin que tengas que perder horas pensando qué subir.",
+        "respuesta_directa": "La gestión de redes sociales para pymes en Carnelli Studio incluye la planificación mensual de contenidos, el diseño gráfico alineado a tu marca, la redacción persuasiva y la publicación constante en Instagram y Facebook, pensada para que negocios uruguayos mantengan una presencia activa que genere confianza y consultas reales.",
+        "resumen": "Planificación mensual, diseño de piezas, copywriting y gestión de comunidad para que tus redes trabajen por tu negocio.",
+        "contenido": "<p>Sabemos lo que pasa en el día a día de una pyme: entre atender clientes, proveedores y pedidos, las redes sociales quedan para cuando sobra tiempo. Y cuando publicás a las apuradas, el perfil no refleja la calidad real de tu trabajo.</p><p>Nos encargamos de ordenar tu comunicación de punta a punta con paquetes mensuales claros: definimos qué pilares de contenido necesita tu negocio, diseñamos las piezas con una identidad visual coherente y redactamos textos cercanos que invitan a escribirte.</p>",
+        "icono_svg": "share-2",
+        "beneficios": [
+            "Presencia constante y profesional todas las semanas sin quitarte tiempo operativo.",
+            "Calendario de contenidos planificado con anticipación para que apruebes todo de una sola vez.",
+            "Diseño visual coherente que diferencia a tu pyme de la competencia.",
+            "Foco en generar conversaciones y consultas reales por WhatsApp o mensaje directo."
+        ],
+        "que_incluye": [
+            "Diagnóstico y optimización completa de biografía, destacados y enlaces de contacto.",
+            "Planificación mensual de contenidos alineada a tus objetivos comerciales.",
+            "Diseño de publicaciones para el feed, carruseles informativos e historias.",
+            "Redacción de textos (copywriting) en tono rioplatense cercano y llamadas a la acción claras.",
+            "Programación, publicación y reporte mensual de rendimiento."
+        ],
+        "proceso": [
+            "Reunión inicial para conocer tu negocio, tus productos y las dudas más comunes de tus clientes.",
+            "Armado de la estrategia visual y calendario del mes.",
+            "Diseño y edición de las piezas para tu revisión y aprobación.",
+            "Publicación programada y análisis mensual de resultados."
+        ],
+        "orden": 1,
+        "activo": 1,
+        "meta_title": "Gestión de Redes Sociales para Pymes en Uruguay | Carnelli Studio",
+        "meta_description": "Delegá las redes sociales de tu pyme en Uruguay. Planificación mensual, diseño de posts, carruseles e historias para Instagram y Facebook. Pedí tu presupuesto."
+    },
+    {
+        "id": 2,
+        "slug": "edicion-de-imagen-y-video",
+        "nombre": "Edición de imagen y video para redes",
+        "capa": 1,
+        "subtitulo_corto": "Transformamos el material que tenés en tu celular o negocio en Reels dinámicos y piezas gráficas que atrapan la atención.",
+        "respuesta_directa": "El servicio de edición de imagen y video para redes transforma los videos e imágenes crudos de tu negocio en Reels dinámicos, historias atractivas y gráficas profesionales optimizadas para Instagram, Facebook y TikTok, logrando que tu pyme comunique con calidad visual sin necesidad de complejas producciones.",
+        "resumen": "Edición de Reels con ritmo, subtítulos dinámicos y piezas gráficas listas para destacar en el feed y en historias.",
+        "contenido": "<p>Hoy el video corto (Reels e Historias) es el formato con mayor alcance orgánico, pero editar lleva horas. Vos grabás con tu teléfono en el local, taller o depósito siguiendo nuestras guías simples, y nosotros nos ocupamos de toda la posproducción.</p><p>Recortamos los silencios, sumamos subtítulos dinámicos, música en tendencia, placas con tu identidad de marca y llamados a la acción para que cada video retenga la atención desde el primer segundo.</p>",
+        "icono_svg": "film",
+        "beneficios": [
+            "Reels ágiles con subtítulos y gráficas de marca que retienen al usuario.",
+            "Aprovechás el material real de tu día a día sin frenar tu trabajo para editar.",
+            "Formatos listos y adaptados a las medidas exactas de Instagram y Facebook.",
+            "Mayor alcance orgánico mostrando tus productos o servicios en acción."
+        ],
+        "que_incluye": [
+            "Guía práctica de tomas simples para que sepas qué mostrar con tu celular.",
+            "Montaje dinámico, corrección de color e integración de identidad visual.",
+            "Subtitulado claro y animado (clave para quienes miran el celular sin sonido).",
+            "Retoque y adaptación de imágenes de productos o servicios para catálogo y redes.",
+            "Entrega en alta calidad lista para publicar o integrada a tu plan de redes."
+        ],
+        "proceso": [
+            "Nos compartís tus videos o fotos crudas por carpeta compartida o WhatsApp.",
+            "Seleccionamos las mejores tomas y armamos la estructura con gancho inicial.",
+            "Editamos video, audio, subtítulos y portada.",
+            "Te entregamos las piezas listas para publicar tras tu visto bueno."
+        ],
+        "orden": 2,
+        "activo": 1,
+        "meta_title": "Edición de Video, Reels y Diseño para Redes en Uruguay | Carnelli Studio",
+        "meta_description": "Edición profesional de Reels, videos cortos y piezas gráficas para redes sociales de pymes en Uruguay. Subtítulos dinámicos e identidad de marca."
+    },
+    {
+        "id": 3,
+        "slug": "publicidad-meta-ads",
+        "nombre": "Campañas de Meta Ads",
+        "capa": 1,
+        "subtitulo_corto": "Anuncios en Instagram y Facebook configurados profesionalmente para recibir consultas reales por WhatsApp o ventas en tu web.",
+        "respuesta_directa": "Las campañas de Meta Ads en Carnelli Studio consisten en la planificación, segmentación y optimización continua de anuncios pagos en Instagram y Facebook desde el Administrador Comercial, diseñados específicamente para que las pymes uruguayas reciban mensajes calificados en WhatsApp o compras directas en su tienda online.",
+        "resumen": "Publicidad paga en Instagram y Facebook enfocada en retorno real: más mensajes a tu WhatsApp y más visitas a tu web.",
+        "contenido": "<p>El botón «Promocionar publicación» de Instagram suele gastar presupuesto mostrando tu anuncio a gente que solo da me gusta pero no compra. Para que la publicidad rinda, hay que configurar campañas desde Meta Business Suite con objetivos de conversión claros.</p><p>Segmentamos por zona geográfica (tu barrio, tu ciudad o todo Uruguay), intereses y comportamientos, probamos distintas piezas creativas y optimizamos el presupuesto semana a semana para bajar el costo por consulta.</p>",
+        "icono_svg": "target",
+        "beneficios": [
+            "Consultas directas en tu WhatsApp Business con mensajes preconfigurados.",
+            "Segmentación precisa en tu zona de influencia o en todo el país.",
+            "Optimización continua para no desperdiciar presupuesto en clics sin intención.",
+            "Campañas de remarketing para volver a impactar a quienes visitaron tu web."
+        ],
+        "que_incluye": [
+            "Configuración profesional de Business Manager, Píxel de Meta y eventos de conversión.",
+            "Definición de públicos objetivos por ubicación, edad e intereses en Uruguay.",
+            "Diseño y redacción de anuncios específicos para publicidad (imagen, carrusel o video).",
+            "Monitoreo y ajuste semanal de pujas, creatividades y costos por resultado.",
+            "Reporte claro en español: cuánto invertiste y cuántas consultas o ventas recibiste."
+        ],
+        "proceso": [
+            "Definimos qué producto o servicio es más rentable promocionar y cuánto invertir.",
+            "Preparamos los anuncios y configuramos la campaña técnica.",
+            "Lanzamos y medimos qué anuncio genera mejores consultas en los primeros días.",
+            "Escalamos los anuncios ganadores y te enviamos un resumen claro de resultados."
+        ],
+        "orden": 3,
+        "activo": 1,
+        "meta_title": "Publicidad en Instagram y Facebook (Meta Ads) en Uruguay | Carnelli Studio",
+        "meta_description": "Campañas de Meta Ads para pymes en Uruguay. Anuncios en Instagram y Facebook orientados a generar consultas por WhatsApp y ventas online."
+    },
+    {
+        "id": 4,
+        "slug": "google-ads-y-analytics",
+        "nombre": "Google Ads y Google Analytics",
+        "capa": 1,
+        "subtitulo_corto": "Aparecé primero en Google justo en el segundo en que alguien busca comprar lo que tu pyme ofrece.",
+        "respuesta_directa": "El servicio de Google Ads y Google Analytics posiciona a tu pyme en los primeros lugares del buscador cuando un cliente en Uruguay busca activamente tu servicio o producto, acompañado de una medición precisa de conversiones en GA4 para saber exactamente qué palabras clave generan llamadas, formularios y WhatsApps.",
+        "resumen": "Captá clientes con intención inmediata de compra en el buscador de Google y medí cada conversión con precisión.",
+        "contenido": "<p>Cuando alguien entra a Google y escribe lo que necesita («repuestos en el litoral», «piscinas de fibra», «imprenta rápida»), ya tomó la decisión de comprar: solo está eligiendo a quién llamarle.</p><p>Con Google Ads ponemos tu negocio frente a esa búsqueda exacta y filtramos las palabras negativas para que solo pagues por clics de potenciales clientes reales. Además, dejamos Google Analytics 4 configurado para medir cada clic a WhatsApp, llamada o compra.</p>",
+        "icono_svg": "trending-up",
+        "beneficios": [
+            "Captás demanda activa: personas que están buscando contratar o comprar hoy.",
+            "Control total del presupuesto diario y filtrado de palabras clave negativas.",
+            "Medición real en Google Analytics 4 de formularios, WhatsApps y ventas.",
+            "Resultados desde la primera semana de activación de la campaña."
+        ],
+        "que_incluye": [
+            "Investigación de palabras clave con intención comercial en Uruguay.",
+            "Estructuración de campañas de Búsqueda, anuncios redactados al detalle y extensiones.",
+            "Listado de palabras clave negativas para cuidar cada peso invertido.",
+            "Instalación y configuración de Google Analytics 4 (GA4) y seguimiento de conversiones.",
+            "Optimización continua de costo por clic (CPC) y tasa de conversión."
+        ],
+        "proceso": [
+            "Auditoría de búsquedas de tu rubro en Uruguay y análisis de tu página de destino.",
+            "Configuración de cuenta Google Ads, GA4 y eventos de contacto.",
+            "Activación de anuncios y ajuste fino de palabras clave durante el primer mes.",
+            "Seguimiento continuo y reporte mensual de conversiones logradas."
+        ],
+        "orden": 4,
+        "activo": 1,
+        "meta_title": "Google Ads y Google Analytics para Pymes en Uruguay | Carnelli Studio",
+        "meta_description": "Agencia de Google Ads y Google Analytics 4 en Uruguay. Aparecé primero cuando busquen tu rubro en Google y medí cada consulta o venta."
+    },
+    {
+        "id": 5,
+        "slug": "seo-y-posicionamiento-ia",
+        "nombre": "SEO y GEO (Posicionamiento en Google e IA)",
+        "capa": 1,
+        "subtitulo_corto": "Posicioná tu web en Google y hacé que ChatGPT, Gemini y Perplexity recomienden a tu negocio cuando alguien pregunte por tu rubro.",
+        "respuesta_directa": "Nuestro servicio de SEO y GEO (Generative Engine Optimization) optimiza la estructura técnica, la velocidad y el contenido de tu sitio web para que posicione orgánicamente en los primeros resultados de Google en Uruguay y sea citado como fuente confiable por motores de inteligencia artificial como ChatGPT, Gemini, Perplexity y Copilot.",
+        "resumen": "Optimización orgánica para buscadores tradicionales (SEO) y motores de respuesta con inteligencia artificial (GEO).",
+        "contenido": "<p>La forma de buscar cambió: tus clientes ya no solo buscan en Google, también le preguntan a ChatGPT o Gemini qué empresa recomiendan en Uruguay para resolver un problema.</p><p>Trabajamos el SEO técnico tradicional (velocidad, arquitectura semántica, palabras clave locales) junto con GEO (datos estructurados JSON-LD, archivo <code>llms.txt</code>, contenido directo y autoridad de marca) para que tu pyme gane visibilidad sostenible sin depender únicamente de anuncios pagos.</p>",
+        "icono_svg": "search",
+        "beneficios": [
+            "Tráfico orgánico constante de clientes que buscan tus servicios sin pagar por cada clic.",
+            "Optimización pionera en Uruguay para aparecer en respuestas de ChatGPT, Gemini y Perplexity.",
+            "Mejora real en la velocidad de carga y experiencia de usuario en celulares.",
+            "Construcción de autoridad digital duradera para tu marca."
+        ],
+        "que_incluye": [
+            "Auditoría SEO técnica completa (Core Web Vitals, indexación, encabezados y enlaces).",
+            "Estudio de palabras clave locales (Uruguay, Montevideo, Canelones, interior).",
+            "Implementación de datos estructurados Schema.org (JSON-LD) y archivo llms.txt para IA.",
+            "Optimización de páginas de servicios con formato Answer-First citable por motores generativos.",
+            "Alta y monitoreo en Google Search Console y Bing Webmaster Tools."
+        ],
+        "proceso": [
+            "Diagnóstico técnico y análisis de cómo aparece hoy tu negocio en Google y en IAs.",
+            "Corrección de factores técnicos, velocidad, metadatos y esquemas JSON-LD.",
+            "Reestructuración y creación de páginas optimizadas para las búsquedas de tus clientes.",
+            "Medición mensual de posiciones, impresiones y clics orgánicos."
+        ],
+        "orden": 5,
+        "activo": 1,
+        "meta_title": "SEO y Posicionamiento en IA (GEO) en Uruguay | Carnelli Studio",
+        "meta_description": "Posicionamiento web SEO en Google y GEO para motores de IA (ChatGPT, Gemini, Perplexity) para pymes uruguayas. Atraé clientes de forma orgánica."
+    },
+    {
+        "id": 6,
+        "slug": "google-maps-perfil-de-empresa",
+        "nombre": "Alta y optimización en Google Maps",
+        "capa": 1,
+        "subtitulo_corto": "Que te encuentren en tu zona con teléfono, WhatsApp, horarios y reseñas listas para elegirte a vos.",
+        "respuesta_directa": "El servicio de alta y optimización en Google Maps configura profesionalmente tu Perfil de Empresa en Google (Google Business Profile) para que tu comercio, local o empresa de servicios aparezca destacada en las búsquedas cercanas de tu ciudad o zona de cobertura en Uruguay, aumentando las llamadas y mensajes directos.",
+        "resumen": "Creación, verificación y optimización completa de tu Perfil de Empresa en Google para dominar las búsquedas locales.",
+        "contenido": "<p>Para un negocio local o de área de servicio, aparecer en el mapa de Google con buena información y reseñas reales suele traer más clientes que cualquier red social. Sin embargo, la mayoría de las fichas están incompletas, mal categorizadas o sin reclamar.</p><p>Dejamos tu Perfil de Empresa en Google 100% verificado, con las categorías correctas, catálogo de servicios, fotos optimizadas, botón de contacto y una estrategia práctica para que tus clientes satisfechos te dejen reseñas de 5 estrellas.</p>",
+        "icono_svg": "map-pin",
+        "beneficios": [
+            "Visibilidad inmediata cuando alguien busca tu rubro cerca de tu ubicación o área de atención.",
+            "Acceso directo a tu teléfono, WhatsApp, sitio web y cómo llegar con un solo toque.",
+            "Mayor confianza frente a competidores gracias a una ficha completa y con reseñas.",
+            "Configuración correcta tanto para locales a la calle como para negocios de área de servicio."
+        ],
+        "que_incluye": [
+            "Alta, reclamo de propiedad y asistencia en la verificación oficial ante Google.",
+            "Selección estratégica de categoría principal, categorías secundarias y zonas de atención.",
+            "Carga optimizada de descripción con palabras clave, horarios, servicios y productos.",
+            "Subida de logotipo, portada e imágenes del negocio con formato adecuado.",
+            "Link directo y código QR listo para pedir reseñas a tus clientes por WhatsApp o en el local."
+        ],
+        "proceso": [
+            "Relevamos los datos exactos de tu negocio y verificamos el estado actual en Google Maps.",
+            "Gestionamos el alta o reclamación y optimizamos cada sección del perfil.",
+            "Vinculamos tu web y WhatsApp y te entregamos el kit para recolectar reseñas.",
+            "Dejamos la ficha activa, posicionando y lista para recibir consultas."
+        ],
+        "orden": 6,
+        "activo": 1,
+        "meta_title": "Aparecer en Google Maps en Uruguay (Perfil de Empresa) | Carnelli Studio",
+        "meta_description": "Alta, verificación y optimización de tu negocio en Google Maps (Google Business Profile) en Uruguay. Conseguí más llamadas y clientes en tu zona."
+    },
+    {
+        "id": 7,
+        "slug": "diseno-web-y-landing-pages",
+        "nombre": "Sitios web y Landing Pages",
+        "capa": 2,
+        "subtitulo_corto": "Webs rápidas, hechas a medida (sin plantillas lentas) y pensadas desde el primer píxel para que te pidan presupuesto.",
+        "respuesta_directa": "Desarrollamos sitios web institucionales, páginas de una sección y landing pages a medida para pymes en Uruguay, programadas con código limpio y diseño enfocado en conversión, carga ultrarrápida en celulares, optimización SEO/GEO nativa e integración directa con WhatsApp y mantenimiento continuo.",
+        "resumen": "Sitios de una sección, landing pages de conversión y webs institucionales rápidas, a medida y con mantenimiento incluido.",
+        "contenido": "<p>Muchas pymes tienen una web que tardó meses en hacerse, carga lento en el celular y no genera ni una consulta. En Carnelli Studio encaramos el desarrollo web con una regla simple: tu web tiene que explicar en 5 segundos qué hacés, por qué sos confiable y hacer que contactarte sea facilísimo.</p><p>No usamos plantillas genéricas sobrecargadas: diseñamos y programamos cada sitio a medida de tu marca, optimizado para celulares (donde entra más del 70% de tus clientes) y con mantenimiento posterior para que nunca quede desactualizado.</p>",
+        "icono_svg": "layout",
+        "beneficios": [
+            "Diseño 100% a medida que transmite la seriedad real de tu pyme.",
+            "Velocidad de carga sobresaliente en celulares y computadoras.",
+            "Flujo de contacto pensado para convertir visitas en mensajes de WhatsApp y presupuestos.",
+            "Mantenimiento técnico y soporte directo: cualquier cambio que necesites, estamos ahí."
+        ],
+        "que_incluye": [
+            "Arquitectura de contenidos y redacción persuasiva enfocada en tu cliente ideal.",
+            "Diseño UI/UX adaptable a celular, tablet y escritorio (Mobile First real).",
+            "Desarrollo a medida en código limpio, seguro y sin plugins innecesarios.",
+            "Botón de WhatsApp contextual, formularios inteligentes y medición de conversiones.",
+            "Optimización SEO técnica, certificado SSL (HTTPS), puesta en línea y mantenimiento."
+        ],
+        "proceso": [
+            "Llamada inicial para definir el objetivo de la web (captar leads, mostrar catálogo o validar un servicio).",
+            "Propuesta de estructura, textos e identidad visual alineada a tu marca.",
+            "Desarrollo y pruebas exhaustivas en celulares y escritorio.",
+            "Lanzamiento en tu dominio y acompañamiento con mantenimiento continuo."
+        ],
+        "orden": 7,
+        "activo": 1,
+        "meta_title": "Diseño Web y Landing Pages para Pymes en Uruguay | Carnelli Studio",
+        "meta_description": "Desarrollo de sitios web y landing pages a medida para pymes en Uruguay. Rápidas, adaptadas a celular, optimizadas para Google y con mantenimiento."
+    },
+    {
+        "id": 8,
+        "slug": "tiendas-online-ecommerce",
+        "nombre": "Tiendas online (E-commerce)",
+        "capa": 2,
+        "subtitulo_corto": "Vendé las 24 horas en todo Uruguay con catálogo autogestionable, carrito ágil y pasarela de pago integrada.",
+        "respuesta_directa": "Creamos tiendas online (e-commerce) completas para comercios y pymes uruguayas con catálogo autogestionable, carrito de compras optimizado para celular, integración con pasarelas de pago locales como Mercado Pago, configuración de envíos a todo el país y soporte técnico permanente.",
+        "resumen": "E-commerce listo para cobrar con Mercado Pago y tarjetas, fácil de administrar para vos y cómodo de comprar para tu cliente.",
+        "contenido": "<p>Si hoy vendés por Instagram o WhatsApp respondiendo el precio y el stock de cada producto uno por uno, estás perdiendo ventas fuera de horario y horas de tu día. Una tienda online bien resuelta ordena tu catálogo y permite que el cliente compre y pague en minutos.</p><p>Implementamos tiendas online pensadas para la realidad de las pymes en Uruguay: integradas con Mercado Pago (tarjetas en cuotas, débito y redes de cobranza), reglas de envío para Montevideo e interior, y un panel claro para que subas productos o actualices precios sin depender de nadie.</p>",
+        "icono_svg": "shopping-bag",
+        "beneficios": [
+            "Cobrás con tarjetas de crédito, débito y efectivo mediante Mercado Pago u otras pasarelas.",
+            "Experiencia de compra rápida en celular, sin pasos confusos que hagan abandonar el carrito.",
+            "Panel de administración intuitivo para gestionar productos, precios, stock y pedidos.",
+            "Acompañamiento, capacitación para usarla y mantenimiento técnico continuo."
+        ],
+        "que_incluye": [
+            "Diseño personalizado de tienda online adaptable a todos los dispositivos.",
+            "Catálogo con categorías, filtros, buscador rápido y variantes (talles, colores, modelos).",
+            "Integración y pruebas de pasarela de pago (Mercado Pago / transferencia / pago al retirar).",
+            "Configuración de costos de envío por zona o retiro en el local.",
+            "Capacitación 1 a 1 para gestionar tu tienda + soporte y mantenimiento mensual."
+        ],
+        "proceso": [
+            "Relevamos tu catálogo, medios de cobro y logística de entrega.",
+            "Diseñamos y programamos la tienda cargando la estructura inicial de productos.",
+            "Conectamos la pasarela de pago y probamos todo el flujo de compra de punta a punta.",
+            "Te capacitamos en vivo, lanzamos la tienda y te acompañamos en el mantenimiento."
+        ],
+        "orden": 8,
+        "activo": 1,
+        "meta_title": "Tiendas Online en Uruguay con Mercado Pago (E-commerce) | Carnelli Studio",
+        "meta_description": "Desarrollo de tiendas online e-commerce para pymes en Uruguay. Catálogo autogestionable, pasarela de pago Mercado Pago y mantenimiento continuo."
+    },
+    {
+        "id": 9,
+        "slug": "sistemas-web-a-medida",
+        "nombre": "Sistemas web a medida",
+        "capa": 2,
+        "subtitulo_corto": "Software propio pensado para la forma exacta en que trabaja tu pyme: desde que entra el pedido hasta que se entrega.",
+        "respuesta_directa": "Desarrollamos sistemas web a medida en PHP, JavaScript y MySQL para pymes uruguayas que necesitan digitalizar su operatoria interna —como la gestión de pedidos de punta a punta, control de producción, estados de entrega, clientes o presupuestos— accesible desde cualquier navegador sin licencias costosas.",
+        "resumen": "Desarrollo de sistemas internos a medida (ej. gestión de pedidos de punta a punta) adaptados 100% a tu operación.",
+        "contenido": "<p>Llega un momento en que las planillas de cálculo, los grupos de WhatsApp y los cuadernos no dan abasto: se pierden pedidos, nadie sabe en qué estado está cada trabajo y el dueño tiene que estar encima de todo para que las cosas salgan.</p><p>Los programas enlatados suelen ser caros, complejos y te obligan a cambiar tu forma de trabajar. Nosotros hacemos el camino inverso: escuchamos cómo funciona tu negocio y programamos un sistema web a medida, liviano y directo, donde cada pantalla tiene exactamente lo que vos y tu equipo necesitan usar.</p>",
+        "icono_svg": "cpu",
+        "beneficios": [
+            "Trazabilidad total: sabés en qué estado está cada pedido desde que ingresa hasta la entrega.",
+            "Hecho 100% a la medida de tu negocio, sin funciones de relleno que nadie usa.",
+            "Funciona en la nube desde cualquier computadora o celular, sin instalar nada.",
+            "Trato directo con el desarrollador para evolucionar el sistema a medida que tu pyme crece."
+        ],
+        "que_incluye": [
+            "Relevamiento profundo de tu circuito operativo actual y diseño de la solución.",
+            "Desarrollo full-stack a medida con acceso seguro por roles de usuario.",
+            "Paneles de control claros: estados de pedidos, alertas, historial de clientes y reportes.",
+            "Integración con tu sitio web o tienda online para que los pedidos entren directo al sistema.",
+            "Puesta en marcha, capacitación a tu equipo y mantenimiento evolutivo."
+        ],
+        "proceso": [
+            "Nos reunimos para mapear paso a paso cómo entra, se procesa y se entrega un trabajo hoy.",
+            "Diseñamos una propuesta funcional clara y presupuesto a medida.",
+            "Desarrollamos por etapas mostrándote avances reales para ajustar detalles sobre la marcha.",
+            "Implementamos el sistema en tu negocio y quedamos a cargo del soporte y mejoras."
+        ],
+        "orden": 9,
+        "activo": 1,
+        "meta_title": "Sistemas Web a Medida para Pymes en Uruguay | Carnelli Studio",
+        "meta_description": "Desarrollo de sistemas a medida en Uruguay: gestión de pedidos de punta a punta, seguimiento operativo y software interno para pymes."
+    },
+    {
+        "id": 10,
+        "slug": "automatizacion-e-ia-para-pymes",
+        "nombre": "Organización, automatización e IA aplicada",
+        "capa": 2,
+        "subtitulo_corto": "Ordenamos y sistematizamos tu negocio, automatizamos tareas repetitivas y usamos inteligencia artificial para que ganes tiempo.",
+        "respuesta_directa": "Ayudamos a las pymes uruguayas a ordenar y sistematizar sus procesos diarios, automatizar tareas manuales repetitivas y aplicar herramientas de inteligencia artificial de forma práctica para responder más rápido, eliminar errores operativos y ahorrar horas de trabajo administrativo cada semana.",
+        "resumen": "Orden de procesos, automatización de tareas repetitivas e inteligencia artificial aplicada a problemas reales de tu pyme.",
+        "contenido": "<p>La inteligencia artificial y la automatización no son solo para grandes corporaciones: donde más impacto generan es en una pyme donde dos o tres personas hacen de todo. Si todos los días copiás datos de un lado a otro, redactás las mismas respuestas o perdés el rastro de las tareas pendientes, podemos sistematizarlo.</p><p>No venimos con palabras difíciles ni soluciones teóricas: analizamos qué te come el día hoy, ordenamos el flujo de trabajo de tu negocio y conectamos tus canales para que las tareas repetitivas se hagan solas.</p>",
+        "icono_svg": "zap",
+        "beneficios": [
+            "Ahorrás horas semanales eliminando la carga manual de datos y tareas repetitivas.",
+            "Tu negocio funciona con procesos claros y ordenados aunque no estés presente en cada detalle.",
+            "Respuestas más rápidas y consistentes a las consultas frecuentes de tus clientes.",
+            "Implementación práctica y aterrizada a la realidad y presupuesto de una pyme."
+        ],
+        "que_incluye": [
+            "Diagnóstico de cuellos de botella y tareas manuales repetitivas en tu operación diaria.",
+            "Estructuración y sistematización de los procesos comerciales y operativos del negocio.",
+            "Automatizaciones entre formularios, WhatsApp, correo electrónico, agendas y planillas.",
+            "Asistentes e integraciones con IA para clasificación de consultas, borradores y resúmenes.",
+            "Documentación simple y acompañamiento para que todo tu equipo lo adopte sin fricción."
+        ],
+        "proceso": [
+            "Reunión de diagnóstico para detectar qué tareas te quitan más tiempo hoy.",
+            "Propuesta concreta de qué ordenar y qué automatizar primero según el impacto.",
+            "Configuración, desarrollo y pruebas de las automatizaciones y flujos de IA.",
+            "Entrega funcionando, capacitación práctica y soporte posterior."
+        ],
+        "orden": 10,
+        "activo": 1,
+        "meta_title": "Automatización con IA y Sistematización para Pymes en Uruguay | Carnelli Studio",
+        "meta_description": "Ordenamos y sistematizamos tu negocio en Uruguay. Automatización de tareas repetitivas e inteligencia artificial aplicada para pymes."
+    },
+    {
+        "id": 11,
+        "slug": "clases-personalizadas-y-consultoria",
+        "nombre": "Clases personalizadas y consultoría",
+        "capa": 2,
+        "subtitulo_corto": "Sesiones 1 a 1 (por videollamada o presenciales) enfocadas 100% en destrabar tus dudas y dominar tus herramientas digitales.",
+        "respuesta_directa": "Ofrecemos clases personalizadas 1 a 1 y consultoría digital para dueños y equipos de pymes en Uruguay —tanto online por videollamada como presencial en Ciudad de la Costa—, enfocadas en resolver dudas reales sobre herramientas digitales, sistemas, tiendas online o inteligencia artificial aplicada a tu propio negocio.",
+        "resumen": "Acompañamiento 1 a 1 online o presencial para aprender a usar herramientas digitales o tomar decisiones tecnológicas con respaldo.",
+        "contenido": "<p>A veces no necesitás delegar todo, sino que alguien se siente con vos una hora, mire tu pantalla y te explique en criollo cómo resolver algo puntual en tu negocio, cómo sacarle jugo a la inteligencia artificial o qué camino tecnológico te conviene elegir antes de invertir.</p><p>No damos cursos genéricos grabados: son clases y consultorías 100% personalizadas sobre tu propio caso, a tu ritmo, de forma remota por videollamada para todo Uruguay o presencial en Ciudad de la Costa (Canelones).</p>",
+        "icono_svg": "compass",
+        "beneficios": [
+            "100% enfocado en tu negocio y tus dudas puntuales, sin teoría de relleno.",
+            "Explicado en lenguaje claro, paso a paso y practicando en vivo sobre tus herramientas.",
+            "Modalidad flexible: por videollamada en todo Uruguay o presencial en Ciudad de la Costa.",
+            "Ahorrás tiempo y evitás errores costosos antes de contratar o desarrollar tecnología."
+        ],
+        "que_incluye": [
+            "Relevamiento previo de los temas o problemas que querés resolver en la sesión.",
+            "Encuentro 1 a 1 en vivo (online con pantalla compartida o presencial).",
+            "Aplicación práctica sobre tus cuentas, tu tienda online, tus sistemas o herramientas de IA.",
+            "Resumen posterior con los pasos clave vistos en la sesión para que lo tengas a mano.",
+            "Posibilidad de agendar sesiones sueltas o un seguimiento periódico."
+        ],
+        "proceso": [
+            "Nos contás por WhatsApp o formulario qué necesitás aprender o destrabar.",
+            "Coordinamos día y hora (videollamada o presencial en Ciudad de la Costa).",
+            "Trabajamos juntos en vivo directamente sobre tu caso real.",
+            "Te llevás el problema resuelto y una guía clara de próximos pasos."
+        ],
+        "orden": 11,
+        "activo": 1,
+        "meta_title": "Consultoría Digital y Clases Personalizadas 1 a 1 en Uruguay | Carnelli Studio",
+        "meta_description": "Consultoría tecnológica y clases personalizadas 1 a 1 (online en todo Uruguay o presencial en Ciudad de la Costa) para dueños de pymes."
+    }
+]

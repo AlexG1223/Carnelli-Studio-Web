@@ -1,0 +1,9 @@
+# Ignorar secretos, caché, logs y carpeta fuente de kit de marca
+app/.env
+app/storage/cache/*.html
+app/storage/logs/*.log
+app/storage/rate-limit/*.json
+Carnelli-Studio-Kit-de-Marca/
+kit-de-marca/
+.DS_Store
+Thumbs.db

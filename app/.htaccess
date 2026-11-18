@@ -1,0 +1,9 @@
+# Bloquear acceso directo a la carpeta app/ si está dentro del document root
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order deny,allow
+    Deny from all
+</IfModule>
+

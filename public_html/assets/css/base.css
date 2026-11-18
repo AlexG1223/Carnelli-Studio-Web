@@ -1,0 +1,267 @@
+/* ==========================================================================
+   CARNELLI STUDIO — BASE CSS (SISTEMA DE DISEÑO, TIPOGRAFÍA WOFF2 Y TOKENS)
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* Paleta Oficial del Kit de Marca v2.0 */
+    --azul-profundo: #0D3B8C;
+    --azul-primario: #1E6FE0;
+    --azul-claro: #3B82F6;
+    --negro-texto: #1A1A1A;
+    --fondo-claro: #FAFAFA;
+    --degrade-marca: linear-gradient(135deg, #0D3B8C 0%, #1E6FE0 55%, #3B82F6 100%);
+
+    /* Tonos derivados de soporte (superficies, bordes y estados) */
+    --blanco: #FFFFFF;
+    --azul-suave: #EEF4FF;
+    --azul-borde: #D6E4FF;
+    --gris-texto: #475569;
+    --gris-claro: #E2E8F0;
+    --verde-wa: #16A34A;
+
+    /* Tipografía Oficial */
+    --font-heading: 'Quicksand', system-ui, -apple-system, sans-serif;
+    --font-body: 'Open Sans', system-ui, -apple-system, sans-serif;
+
+    /* Layout & Espaciado */
+    --container-max: 1220px;
+    --container-narrow: 840px;
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --shadow-sm: 0 4px 16px rgba(13, 59, 140, 0.06);
+    --shadow-md: 0 14px 34px rgba(13, 59, 140, 0.10);
+    --shadow-lg: 0 24px 54px rgba(13, 59, 140, 0.16);
+    --transition: 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--negro-texto);
+    background-color: var(--fondo-claro);
+    overflow-x: hidden;
+    padding-bottom: 68px; /* Espacio en mobile para la barra CTA inferior */
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-bottom: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.18;
+    color: var(--azul-profundo);
+    letter-spacing: -0.015em;
+}
+
+a {
+    color: var(--azul-primario);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--azul-profundo);
+}
+
+:focus-visible {
+    outline: 3px solid var(--azul-claro);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+    background: var(--azul-profundo);
+    color: var(--blanco);
+    padding: 10px 18px;
+    border-radius: var(--radius-sm);
+    z-index: 9999;
+    font-weight: 700;
+}
+
+.skip-link:focus {
+    top: 12px;
+    color: var(--blanco);
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: clamp(1.15rem, 4vw, 2.25rem);
+}
+
+.container--narrow {
+    max-width: var(--container-narrow);
+}
+
+.section {
+    padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+.section--alt {
+    background-color: var(--blanco);
+    border-top: 1px solid var(--gris-claro);
+    border-bottom: 1px solid var(--gris-claro);
+}
+
+.section--dark {
+    background: var(--azul-profundo);
+    background-image: radial-gradient(circle at 85% 15%, rgba(59, 130, 246, 0.28), transparent 45%),
+                      linear-gradient(160deg, #092963 0%, #0D3B8C 60%, #134BA8 100%);
+    color: var(--blanco);
+}
+
+.section--dark h2,
+.section--dark h3,
+.section--dark h4 {
+    color: var(--blanco);
+}
+
+.eyebrow {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.8125rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--azul-primario);
+    margin-bottom: 0.65rem;
+}
+
+.eyebrow--light {
+    color: #93C5FD;
+}
+
+.section-header {
+    max-width: 720px;
+    margin-bottom: clamp(2rem, 4.5vw, 3.25rem);
+}
+
+.section-header--split {
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .section-header--split {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+.section-title {
+    font-size: clamp(1.75rem, 3.4vw, 2.5rem);
+    margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+    font-size: clamp(1rem, 1.4vw, 1.125rem);
+    color: var(--gris-texto);
+}
+
+.section-header--light .section-subtitle {
+    color: rgba(255, 255, 255, 0.84);
+}
+
+.mt-sm { margin-top: 0.75rem; }
+.mt-md { margin-top: 1.5rem; }
+.mt-lg { margin-top: 2.5rem; }
+.text-center { text-align: center; }
+.text-muted { color: var(--gris-texto); }
+
+/* Honeypot oculto para anti-spam */
+.hp-field {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+}
+
+/* Respeto estricto a prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+

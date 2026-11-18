@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "clave": "nombre_sitio",
+        "valor": "Carnelli Studio",
+        "grupo": "general"
+    },
+    {
+        "id": 2,
+        "clave": "posicionamiento",
+        "valor": "Agencia de transformación digital para pymes",
+        "grupo": "general"
+    },
+    {
+        "id": 3,
+        "clave": "tagline",
+        "valor": "Diseñamos el crecimiento digital de tu pyme",
+        "grupo": "hero"
+    },
+    {
+        "id": 4,
+        "clave": "hero_subtitulo",
+        "valor": "Ordenamos tus redes, creamos tu sitio web o tienda online y desarrollamos sistemas a medida con inteligencia artificial que te ahorran horas de trabajo todas las semanas.",
+        "grupo": "hero"
+    },
+    {
+        "id": 5,
+        "clave": "fundador",
+        "valor": "Alex Carnelli",
+        "grupo": "general"
+    },
+    {
+        "id": 6,
+        "clave": "ubicacion_presencial",
+        "valor": "Ciudad de la Costa (Canelones)",
+        "grupo": "contacto"
+    },
+    {
+        "id": 7,
+        "clave": "ubicacion_remota",
+        "valor": "Todo Uruguay por videollamada",
+        "grupo": "contacto"
+    },
+    {
+        "id": 8,
+        "clave": "whatsapp_visible",
+        "valor": "092 473 724",
+        "grupo": "contacto"
+    },
+    {
+        "id": 9,
+        "clave": "whatsapp_intl",
+        "valor": "59892473724",
+        "grupo": "contacto"
+    },
+    {
+        "id": 10,
+        "clave": "whatsapp_mensaje_default",
+        "valor": "Hola Alex, entré a la web de Carnelli Studio y quiero consultar para mi pyme.",
+        "grupo": "contacto"
+    },
+    {
+        "id": 11,
+        "clave": "email_contacto",
+        "valor": "carnellistudio2026@gmail.com",
+        "grupo": "contacto"
+    },
+    {
+        "id": 12,
+        "clave": "instagram_url",
+        "valor": "https://www.instagram.com/carnelli.studio/",
+        "grupo": "redes"
+    },
+    {
+        "id": 13,
+        "clave": "instagram_handle",
+        "valor": "@carnelli.studio",
+        "grupo": "redes"
+    },
+    {
+        "id": 14,
+        "clave": "facebook_url",
+        "valor": "",
+        "grupo": "redes"
+    },
+    {
+        "id": 15,
+        "clave": "linkedin_url",
+        "valor": "",
+        "grupo": "redes"
+    },
+    {
+        "id": 16,
+        "clave": "agenda_url",
+        "valor": "",
+        "grupo": "contacto"
+    },
+    {
+        "id": 17,
+        "clave": "dominio",
+        "valor": "carnellistudio.com.uy",
+        "grupo": "seo"
+    },
+    {
+        "id": 18,
+        "clave": "tiempo_respuesta",
+        "valor": "Te respondo en menos de 24 horas hábiles",
+        "grupo": "contacto"
+    },
+    {
+        "id": 19,
+        "clave": "horarios_atencion",
+        "valor": "Lunes a Viernes de 9:00 a 18:00 hs",
+        "grupo": "contacto"
+    },
+    {
+        "id": 20,
+        "clave": "foto_fundador",
+        "valor": "",
+        "grupo": "general"
+    },
+    {
+        "id": 21,
+        "clave": "ga4_id",
+        "valor": "",
+        "grupo": "analitica"
+    },
+    {
+        "id": 22,
+        "clave": "meta_pixel_id",
+        "valor": "",
+        "grupo": "analitica"
+    },
+    {
+        "id": 23,
+        "clave": "search_console_meta",
+        "valor": "",
+        "grupo": "analitica"
+    },
+    {
+        "id": 24,
+        "clave": "meta_description_default",
+        "valor": "Carnelli Studio es una agencia de transformación digital para pymes uruguayas. Redes sociales, sitios web, tiendas online con Mercado Pago, sistemas a medida e IA.",
+        "grupo": "seo"
+    }
+]
