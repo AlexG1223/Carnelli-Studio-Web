@@ -25,3 +25,4 @@
 - [ ] Cargar **testimonios reales** en `/admin/testimonios` a medida que los clientes te los envíen (la sección se activa sola en la web cuando hay al menos uno publicado).
 - [ ] Completar en `/admin/ajustes`: foto de Alex Carnelli para `/quien-soy`, link para agendar videollamada, Facebook/LinkedIn (si los abrís) e IDs de GA4 / Meta Pixel.
 - [ ] Dar de alta el dominio en **Google Search Console**, **Bing Webmaster Tools** y **Perfil de Empresa en Google (Google Maps)**.
+

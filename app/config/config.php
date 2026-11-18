@@ -1,6 +1,6 @@
 <?php
 /**
- * Configuración global y carga de variables de entorno (.env).
+ * Configuración global y autodetección de entorno (Producción en Hostinger / Staging / Local XAMPP).
  */
 
 declare(strict_types=1);
@@ -10,10 +10,10 @@ if (!defined('APP_PATH')) {
 }
 
 if (!defined('PUBLIC_PATH')) {
-    define('PUBLIC_PATH', dirname(APP_PATH) . '/public_html');
+    define('PUBLIC_PATH', dirname(APP_PATH));
 }
 
-// Cargador liviano de archivo .env
+// Cargador liviano de archivo .env (opcional; si no existe en autodeploy, usa autodetección inteligente)
 $envFile = APP_PATH . '/.env';
 if (is_file($envFile)) {
     $lines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -44,7 +44,12 @@ function env(string $key, mixed $default = null): mixed
 
 date_default_timezone_set((string)env('APP_TIMEZONE', 'America/Montevideo'));
 
-$isDebug = (bool)env('APP_DEBUG', false);
+$host      = $_SERVER['HTTP_HOST'] ?? 'localhost';
+$isLocal   = in_array($host, ['localhost', '127.0.0.1'], true) || str_starts_with($host, 'localhost:');
+$defaultEnv= $isLocal ? 'development' : 'production';
+$appEnv    = (string)env('APP_ENV', $defaultEnv);
+$isDebug   = (bool)env('APP_DEBUG', $isLocal);
+
 if ($isDebug) {
     ini_set('display_errors', '1');
     error_reporting(E_ALL);
@@ -55,16 +60,25 @@ if ($isDebug) {
     ini_set('error_log', APP_PATH . '/storage/logs/php-errors.log');
 }
 
-// Detectar URL base automáticamente para funcionar tanto en XAMPP (subcarpeta) como en Hostinger (raíz)
-$scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-$host   = $_SERVER['HTTP_HOST'] ?? 'localhost';
-$scriptDir = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? ''));
-$scriptDir = preg_replace('#/public_html$#', '', rtrim($scriptDir, '/'));
-$detectedBaseUrl = $scheme . '://' . $host . ($scriptDir !== '' && $scriptDir !== '/' ? $scriptDir : '');
+// Detectar esquema HTTPS detrás de proxy / Cloudflare / LiteSpeed en Hostinger
+$isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+    || (($_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '') === 'https')
+    || (($_SERVER['SERVER_PORT'] ?? '') == 443);
+$scheme = $isHttps ? 'https' : 'http';
 
-define('BASE_URL', rtrim((string)env('APP_URL', $detectedBaseUrl), '/'));
-define('BASE_PATH', $scriptDir !== '/' ? $scriptDir : '');
-define('ASSETS_VERSION', '2.0.1');
+$scriptDir = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? ''));
+$scriptDir = ($scriptDir === '/' || $scriptDir === '\\' || $scriptDir === '.') ? '' : rtrim($scriptDir, '/');
+$detectedBaseUrl = $scheme . '://' . $host . $scriptDir;
+
+// Si APP_URL en .env apunta a localhost pero estamos en dominio real de Hostinger, priorizar el dominio real
+$configuredUrl = (string)env('APP_URL', '');
+if ($configuredUrl === '' || (!$isLocal && str_contains($configuredUrl, 'localhost'))) {
+    $configuredUrl = $detectedBaseUrl;
+}
+
+define('APP_ENV', $appEnv);
+define('BASE_URL', rtrim($configuredUrl, '/'));
+define('BASE_PATH', $scriptDir);
+define('ASSETS_VERSION', '2.1.0');
 define('DATA_PATH', APP_PATH . '/data');
 define('STORAGE_PATH', APP_PATH . '/storage');
-

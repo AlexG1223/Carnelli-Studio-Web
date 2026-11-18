@@ -14,7 +14,7 @@ class Cache
 
     public static function get(string $uri): ?string
     {
-        if (env('APP_ENV') === 'development') {
+        if (APP_ENV === 'development') {
             return null;
         }
         $file = self::getFilePath($uri);
@@ -31,7 +31,7 @@ class Cache
 
     public static function put(string $uri, string $html): void
     {
-        if (env('APP_ENV') === 'development') {
+        if (APP_ENV === 'development') {
             return;
         }
         $file = self::getFilePath($uri);

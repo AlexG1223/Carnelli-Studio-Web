@@ -1,20 +1,67 @@
-# .htaccess raíz para desarrollo local en XAMPP (http://localhost/carnelliStudioWeb/)
+# ==============================================================================
+# .htaccess — Carnelli Studio (Hostinger LiteSpeed/Apache + XAMPP Local)
+# Preparado para autodeploy de Git directamente dentro de public_html/
+# ==============================================================================
+
 Options -Indexes -MultiViews
 DirectoryIndex index.php
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Bloquear acceso directo por navegador a la carpeta app/
+    # 1. Bloquear por completo cualquier intento de acceso HTTP a app/, .git/ o archivos .md/.env
     RewriteRule ^app(/|$) - [F,L]
+    RewriteRule ^\.git(/|$) - [F,L]
+    RewriteRule ^(README|DEPLOY|CHECKLIST-SEO-GEO)\.md$ - [F,L]
 
-    # Redirigir assets, uploads, manifest y favicon a public_html/
-    RewriteRule ^(assets|uploads)/(.*)$ public_html/$1/$2 [L]
-    RewriteRule ^(favicon\.ico|manifest\.webmanifest)$ public_html/$1 [L]
+    # 2. Forzar HTTPS automáticamente en producción (no afecta a localhost en XAMPP)
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1) [NC]
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # Si el archivo existe en public_html, servirlo
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
+    # 3. Servir archivos y carpetas públicas reales (assets/, uploads/, favicon.ico, manifest.webmanifest)
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # 4. Enviar todas las rutas limpias al Front Controller (index.php)
     RewriteRule ^ index.php [QSA,L]
 </IfModule>
 
+# Proteger archivos sensibles adicionales
+<FilesMatch "^(\.env|\.env\.example|\.gitignore|composer\.json|composer\.lock)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Compresión Gzip / Deflate
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml font/woff2
+</IfModule>
+
+# Caché de navegador larga para recursos estáticos versionados
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 hour"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# Headers de Seguridad
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>

@@ -19,3 +19,4 @@
 - **URL:** `http://localhost/carnelliStudioWeb/admin/login`
 - **Email inicial:** `carnellistudio2026@gmail.com`
 - **Contraseña inicial:** `Carnelli2026!` *(Cambiala al primer ingreso desde `/admin/ajustes`)*.
+
