@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial: Bloque CTA Final grande con formulario corto embebido y WhatsApp directo.
+ * Partial: Bloque CTA Final grande con generador rápido de mensaje personalizado a WhatsApp.
  */
 
 use App\Core\View;
@@ -9,6 +9,7 @@ use App\Core\Icon;
 
 $preselected = $preselectedService ?? '';
 $waMsg       = $whatsappMessage ?? ($settings['whatsapp_mensaje_default'] ?? 'Hola Alex, quiero pedir un presupuesto para mi pyme.');
+$waNumber    = preg_replace('/[^0-9]/', '', (string)($settings['whatsapp_intl'] ?? '59892473724')) ?: '59892473724';
 ?>
 <section class="cta-final" aria-labelledby="cta-final-heading">
     <div class="container">
@@ -29,54 +30,33 @@ $waMsg       = $whatsappMessage ?? ($settings['whatsapp_mensaje_default'] ?? 'Ho
                 <div class="cta-final__direct">
                     <a href="<?= View::e(View::whatsappUrl($waMsg)) ?>" target="_blank" rel="noopener" class="btn btn--white" data-track="whatsapp">
                         <?= Icon::get('whatsapp', 20) ?>
-                        <span>Escribir directo por WhatsApp (<?= View::e($settings['whatsapp_visible'] ?? '092 473 724') ?>)</span>
+                        <span>Abrir chat directo (<?= View::e($settings['whatsapp_visible'] ?? '092 473 724') ?>)</span>
                     </a>
                 </div>
             </div>
 
             <div class="cta-final__form-card">
-                <h3 class="cta-final__form-title">Pedí tu presupuesto rápido</h3>
-                <p class="cta-final__form-sub">Dejame tus datos y te escribo hoy o mañana hábil.</p>
+                <h3 class="cta-final__form-title">Armá tu consulta para WhatsApp</h3>
+                <p class="cta-final__form-sub">Completá estos datos y se abrirá tu WhatsApp con el mensaje armado listo para enviarme.</p>
 
-                <form action="<?= View::url('contacto/enviar') ?>" method="POST" class="quick-form" data-form="lead">
+                <form action="<?= View::url('contacto/enviar') ?>" method="POST" class="quick-form" data-wa-form="quick" data-wa-phone="<?= View::e($waNumber) ?>">
                     <?= Csrf::field() ?>
-                    <input type="hidden" name="form_started_at" value="<?= time() ?>">
-                    <input type="hidden" name="pagina_origen" value="<?= View::e($currentPath ?? '/') ?>">
-                    <input type="hidden" name="utm_source" value="">
-                    <input type="hidden" name="utm_medium" value="">
-                    <input type="hidden" name="utm_campaign" value="">
-
-                    <!-- Honeypot anti-spam -->
-                    <div class="hp-field" aria-hidden="true">
-                        <label for="qf_website_url">No completar este campo</label>
-                        <input type="text" id="qf_website_url" name="website_url" tabindex="-1" autocomplete="off">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="qf_nombre" class="form-label">Tu nombre *</label>
-                        <input type="text" id="qf_nombre" name="nombre" class="form-input" placeholder="Ej: Martín Rodríguez" required>
-                    </div>
 
                     <div class="form-row-2">
                         <div class="form-group">
-                            <label for="qf_negocio" class="form-label">Nombre de tu pyme / rubro *</label>
-                            <input type="text" id="qf_negocio" name="negocio" class="form-input" placeholder="Ej: Ferretería Central" required>
+                            <label for="qf_nombre" class="form-label">Tu nombre *</label>
+                            <input type="text" id="qf_nombre" name="nombre" class="form-input" placeholder="Ej: Martín Rodríguez" required>
                         </div>
                         <div class="form-group">
-                            <label for="qf_whatsapp" class="form-label">Tu WhatsApp *</label>
-                            <input type="tel" id="qf_whatsapp" name="whatsapp" class="form-input" placeholder="Ej: 099 123 456" required>
+                            <label for="qf_negocio" class="form-label">Tu pyme / rubro *</label>
+                            <input type="text" id="qf_negocio" name="negocio" class="form-input" placeholder="Ej: Ferretería Central" required>
                         </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="qf_email" class="form-label">Tu email (para enviarte confirmación)</label>
-                        <input type="email" id="qf_email" name="email" class="form-input" placeholder="tu@correo.com">
                     </div>
 
                     <div class="form-group">
                         <label for="qf_servicio" class="form-label">¿Qué te interesa priorizar?</label>
                         <select id="qf_servicio" name="servicios_interes[]" class="form-select">
-                            <option value="Asesoramiento integral">Quiero asesoramiento para elegir</option>
+                            <option value="Quiero asesoramiento para elegir">Quiero asesoramiento para elegir</option>
                             <option value="Sitios web y Landing Pages" <?= $preselected === 'Sitios web y Landing Pages' ? 'selected' : '' ?>>Sitio Web o Landing Page</option>
                             <option value="Tiendas online (E-commerce)" <?= $preselected === 'Tiendas online (E-commerce)' ? 'selected' : '' ?>>Tienda Online con Mercado Pago</option>
                             <option value="Sistemas web a medida" <?= $preselected === 'Sistemas web a medida' ? 'selected' : '' ?>>Sistema web a medida (ej. pedidos)</option>
@@ -93,15 +73,12 @@ $waMsg       = $whatsappMessage ?? ($settings['whatsapp_mensaje_default'] ?? 'Ho
                         <textarea id="qf_mensaje" name="mensaje" rows="2" class="form-textarea" placeholder="Ej: Queremos vender por web con Mercado Pago y ordenar los pedidos..."></textarea>
                     </div>
 
-                    <input type="hidden" name="preferencia_contacto" value="whatsapp">
-
                     <button type="submit" class="btn btn--primary btn--full btn--lg">
-                        <span>Enviar consulta ahora</span>
-                        <?= Icon::get('arrow-right', 18) ?>
+                        <?= Icon::get('whatsapp', 20) ?>
+                        <span>Enviar consulta a mi WhatsApp</span>
                     </button>
                 </form>
             </div>
         </div>
     </div>
 </section>
-

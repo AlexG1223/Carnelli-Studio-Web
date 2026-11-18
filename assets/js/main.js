@@ -2,23 +2,21 @@
  * Carnelli Studio — Main JS (ES Module)
  * Gestiona:
  * 1. Menú mobile accesible
- * 2. Captura de parámetros UTM al entrar al sitio y relleno automático en formularios
- * 3. Eventos de conversión (GA4 / Meta Pixel) en WhatsApp, Email, Agenda y envío de formularios
+ * 2. Generación de mensajes personalizados desde los formularios hacia WhatsApp (sin guardar en BD)
+ * 3. Eventos de conversión (GA4 / Meta Pixel)
  * 4. Toggle interactivo de las Dos Capas en Inicio
- * 5. Filtro animado de proyectos sin recargar (Fetch JSON + History API)
- * 6. Wizard inteligente de contacto en 3 pasos con guardado de borrador en sessionStorage
- * 7. Lightbox accesible con teclado y swipe táctil en Casos de Estudio
+ * 5. Wizard de 3 pasos en /contacto
+ * 6. Lightbox accesible con teclado en Casos de Estudio
  */
 
 document.documentElement.classList.add('js-enabled');
 
 document.addEventListener('DOMContentLoaded', () => {
     initMobileNav();
-    initUtmCapture();
     initConversionTracking();
     initLayersToggle();
-    initPortfolioFilter();
     initContactWizard();
+    initWhatsAppForms();
     initLightbox();
     initMagneticButtons();
 });
@@ -31,20 +29,6 @@ function initMobileNav() {
     toggle.addEventListener('click', () => {
         const isOpen = nav.classList.toggle('is-open');
         toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-}
-
-function initUtmCapture() {
-    const params = new URLSearchParams(window.location.search);
-    ['utm_source', 'utm_medium', 'utm_campaign'].forEach(key => {
-        const val = params.get(key);
-        if (val) {
-            sessionStorage.setItem('cs_' + key, val);
-        }
-        const stored = sessionStorage.getItem('cs_' + key) || '';
-        document.querySelectorAll(`input[name="${key}"]`).forEach(input => {
-            input.value = stored;
-        });
     });
 }
 
@@ -75,17 +59,6 @@ function initConversionTracking() {
             fireEvent('click_schedule', { page: window.location.pathname });
         });
     });
-
-    document.querySelectorAll('form[data-form="lead"]').forEach(form => {
-        form.addEventListener('submit', () => {
-            fireEvent('generate_lead', { page: window.location.pathname });
-            sessionStorage.removeItem('cs_wizard_draft');
-        });
-    });
-
-    if (document.querySelector('[data-conversion="lead_submitted"]')) {
-        fireEvent('lead_thank_you_page', { page: '/gracias' });
-    }
 }
 
 function initLayersToggle() {
@@ -114,36 +87,6 @@ function initLayersToggle() {
     });
 }
 
-function initPortfolioFilter() {
-    const grid  = document.getElementById('portfolio-grid');
-    const pills = document.querySelectorAll('[data-filter-slug]');
-    if (!grid || !pills.length) return;
-
-    pills.forEach(pill => {
-        pill.addEventListener('click', async (e) => {
-            e.preventDefault();
-            const slug = pill.getAttribute('data-filter-slug') || 'todos';
-            const href = pill.getAttribute('href') || window.location.pathname;
-
-            pills.forEach(p => p.classList.toggle('is-active', p === pill));
-
-            try {
-                const baseUrl = href.split('?')[0].replace(/\/proyectos$/, '');
-                const apiUrl  = `${baseUrl}/api/proyectos?servicio=${encodeURIComponent(slug)}`;
-                const res     = await fetch(apiUrl, { headers: { 'Accept': 'application/json' } });
-                if (!res.ok) throw new Error('Error de red');
-                const data = await res.json();
-                if (data.ok) {
-                    grid.innerHTML = data.html || '<div class="empty-state"><h3>No hay proyectos para ese filtro puntual</h3></div>';
-                    window.history.pushState({}, '', href);
-                }
-            } catch {
-                window.location.href = href;
-            }
-        });
-    });
-}
-
 function initContactWizard() {
     const form = document.getElementById('contact-wizard-form');
     if (!form) return;
@@ -151,28 +94,6 @@ function initContactWizard() {
     const steps      = form.querySelectorAll('.wizard-step');
     const indicators = document.querySelectorAll('[data-step-ind]');
     const fillBar    = document.getElementById('wizard-progress-fill');
-    const storageKey = 'cs_wizard_draft';
-
-    // Restaurar borrador desde sessionStorage
-    try {
-        const saved = JSON.parse(sessionStorage.getItem(storageKey) || '{}');
-        Object.entries(saved).forEach(([name, val]) => {
-            const field = form.querySelector(`[name="${name}"]`);
-            if (field && field.type !== 'checkbox' && field.type !== 'radio' && !field.value) {
-                field.value = val;
-            }
-        });
-    } catch {}
-
-    // Guardar cambios en sessionStorage
-    form.addEventListener('input', () => {
-        const draft = {};
-        ['negocio', 'rubro', 'situacion_actual', 'mensaje', 'nombre', 'whatsapp', 'email'].forEach(k => {
-            const el = form.querySelector(`[name="${k}"]`);
-            if (el) draft[k] = el.value;
-        });
-        sessionStorage.setItem(storageKey, JSON.stringify(draft));
-    });
 
     function goToStep(stepNumber) {
         steps.forEach(st => {
@@ -209,14 +130,64 @@ function initContactWizard() {
     });
 }
 
+function initWhatsAppForms() {
+    document.querySelectorAll('form[data-wa-form]').forEach(form => {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const nombreEl  = form.querySelector('[name="nombre"]');
+            const negocioEl = form.querySelector('[name="negocio"]');
+            if (nombreEl && !nombreEl.value.trim()) {
+                nombreEl.focus();
+                nombreEl.reportValidity();
+                return;
+            }
+            if (negocioEl && !negocioEl.value.trim()) {
+                negocioEl.focus();
+                negocioEl.reportValidity();
+                return;
+            }
+
+            const phone     = form.getAttribute('data-wa-phone') || '59892473724';
+            const nombre    = (nombreEl?.value || '').trim();
+            const negocio   = (negocioEl?.value || '').trim();
+            const rubro     = (form.querySelector('[name="rubro"]')?.value || '').trim();
+            const situacion = (form.querySelector('[name="situacion_actual"]')?.value || '').trim();
+            const plan      = (form.querySelector('[name="plan_interes"]')?.value || '').trim();
+            const mensaje   = (form.querySelector('[name="mensaje"]')?.value || '').trim();
+
+            const servicios = [];
+            form.querySelectorAll('[name="servicios_interes[]"]').forEach(el => {
+                if (el.tagName === 'SELECT') {
+                    if (el.value) servicios.push(el.value);
+                } else if (el.checked) {
+                    servicios.push(el.value);
+                }
+            });
+
+            const lines = ['¡Hola Alex! Te escribo desde la web de Carnelli Studio:'];
+            if (nombre) lines.push(`• *Mi nombre:* ${nombre}`);
+            if (negocio) lines.push(`• *Negocio:* ${negocio}${rubro ? ` (${rubro})` : ''}`);
+            if (plan) lines.push(`• *Plan de interés:* ${plan}`);
+            if (servicios.length) lines.push(`• *Qué necesito:* ${servicios.join(', ')}`);
+            if (situacion) lines.push(`• *Situación actual:* ${situacion}`);
+            if (mensaje) lines.push(`• *Detalle:* ${mensaje}`);
+
+            const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(lines.join('\n'))}`;
+            fireEvent('generate_lead_whatsapp', { page: window.location.pathname });
+            window.open(waUrl, '_blank', 'noopener');
+        });
+    });
+}
+
 function initLightbox() {
-    const modal   = document.getElementById('lightbox');
-    const imgEl   = document.getElementById('lightbox-img');
-    const capEl   = document.getElementById('lightbox-caption');
-    const closeBtn= document.getElementById('lightbox-close');
-    const prevBtn = document.getElementById('lightbox-prev');
-    const nextBtn = document.getElementById('lightbox-next');
-    const triggers= Array.from(document.querySelectorAll('[data-lightbox-src]'));
+    const modal    = document.getElementById('lightbox');
+    const imgEl    = document.getElementById('lightbox-img');
+    const capEl    = document.getElementById('lightbox-caption');
+    const closeBtn = document.getElementById('lightbox-close');
+    const prevBtn  = document.getElementById('lightbox-prev');
+    const nextBtn  = document.getElementById('lightbox-next');
+    const triggers = Array.from(document.querySelectorAll('[data-lightbox-src]'));
 
     if (!modal || !triggers.length) return;
 
@@ -269,4 +240,3 @@ function initMagneticButtons() {
         });
     });
 }
-
