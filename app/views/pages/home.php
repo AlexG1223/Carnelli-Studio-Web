@@ -75,8 +75,6 @@ use App\Core\Icon;
             <div class="marquee__track">
                 <?php for ($loop = 0; $loop < 2; $loop++): ?>
                     <?php foreach (($clientes ?? []) as $cl): ?>
-                        <?php if ($cl['slug'] === 'fisiolink')
-                            continue; ?>
                         <a href="<?= View::url('proyectos/' . $cl['slug']) ?>" class="marquee__item">
                             <span class="marquee__dot"></span>
                             <strong><?= View::e($cl['nombre']) ?></strong>

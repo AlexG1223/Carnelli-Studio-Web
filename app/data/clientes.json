@@ -5,7 +5,7 @@
         "slug": "impresos-carnelli",
         "rubro": "Imprenta y Gráfica",
         "logo": "",
-        "web_url": "",
+        "web_url": "https://www.impresoscarnelli.com/page/",
         "instagram_url": "",
         "orden": 1,
         "visible": 1
@@ -16,7 +16,7 @@
         "slug": "repuestos-del-litoral",
         "rubro": "Repuestos y reparación de máquinas",
         "logo": "",
-        "web_url": "",
+        "web_url": "https://repuestosdellitoral.com/",
         "instagram_url": "",
         "orden": 2,
         "visible": 1
@@ -27,7 +27,7 @@
         "slug": "redtec-informatica",
         "rubro": "Tecnología e Informática",
         "logo": "",
-        "web_url": "",
+        "web_url": "https://redtecinformatica.com/",
         "instagram_url": "",
         "orden": 3,
         "visible": 1
@@ -38,7 +38,7 @@
         "slug": "piscinas-fiji",
         "rubro": "Piscinas y Spa",
         "logo": "",
-        "web_url": "",
+        "web_url": "https://piscinasmontero.com/",
         "instagram_url": "",
         "orden": 4,
         "visible": 1
@@ -49,7 +49,7 @@
         "slug": "fisiolink",
         "rubro": "Salud y Fisioterapia",
         "logo": "",
-        "web_url": "",
+        "web_url": "https://fisiolink.com/",
         "instagram_url": "",
         "orden": 5,
         "visible": 1

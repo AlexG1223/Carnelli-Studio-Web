@@ -12,26 +12,38 @@
             8,
             9
         ],
-        "resumen_corto": "Digitalización integral: landing page comercial, tienda online y un sistema interno a medida que controla cada pedido desde que ingresa hasta que se entrega en la casa del cliente.",
-        "desafio": "El negocio necesitaba no solo mostrar sus productos gráficos y vender online de forma ordenada, sino también resolver el seguimiento interno de cada trabajo. Cuando los pedidos entran por distintos canales, llevar el control de diseño, impresión, empaquetado y envío de forma manual genera cuellos de botella y consultas constantes sobre el estado de cada entrega.",
-        "solucion": "Desarrollamos una solución completa conectando las dos capas: por fuera, una landing page clara y una tienda online pensada para que el cliente encargue fácil; por dentro, un sistema web a medida de gestión de pedidos de punta a punta que acompaña todo el ciclo operativo desde que entra el pedido hasta la entrega en el domicilio del cliente.",
+        "resumen_corto": "Digitalización integral: landing page comercial, tienda online para gastronomía y un sistema interno a medida que controla cada pedido desde que ingresa hasta que se entrega en la casa del cliente.",
+        "desafio": "El negocio necesitaba presentar sus servicios de impresión profesional, contar con una tienda online ordenada por rubros gastronómicos (pizzerías, restaurantes, food trucks, cafeterías) y resolver el seguimiento interno de cada trabajo desde que entra el pedido hasta la entrega.",
+        "solucion": "Desarrollamos una solución completa conectando las dos capas: por fuera, su landing page institucional (impresoscarnelli.com/page) y su tienda online autogestionable (impresoscarnelli.com/public/tienda); por dentro, un sistema web a medida de gestión de pedidos de punta a punta.",
         "resultado": "Centralización completa de la operación comercial y productiva en una plataforma propia, logrando trazabilidad en cada etapa del pedido y una experiencia de compra ágil para los clientes.",
         "metricas": [],
-        "url_en_vivo": "",
+        "url_en_vivo": "https://www.impresoscarnelli.com/page/",
         "imagen_portada": "assets/img/placeholders/impresos-carnelli-cover.webp",
-        "imagen_portada_alt": "Mockup de tienda online y sistema de gestión de pedidos desarrollado para Impresos Carnelli",
+        "imagen_portada_alt": "Landing page y tienda online desarrollada para Impresos Carnelli",
         "galeria": [
             {
                 "ruta": "assets/img/placeholders/impresos-carnelli-cover.webp",
-                "alt": "Vista escritorio de la tienda online y sistema de pedidos de Impresos Carnelli",
+                "alt": "Landing page institucional de Impresos Carnelli (Escritorio)",
                 "tipo": "desktop",
                 "orden": 1
             },
             {
-                "ruta": "assets/img/placeholders/impresos-carnelli-mobile.webp",
-                "alt": "Vista celular del catálogo y seguimiento de pedidos de Impresos Carnelli",
-                "tipo": "mobile",
+                "ruta": "assets/img/placeholders/impresos-carnelli-tienda.webp",
+                "alt": "Tienda online e-commerce de Impresos Carnelli (Escritorio)",
+                "tipo": "desktop",
                 "orden": 2
+            },
+            {
+                "ruta": "assets/img/placeholders/impresos-carnelli-mobile.webp",
+                "alt": "Vista celular de la landing page de Impresos Carnelli",
+                "tipo": "mobile",
+                "orden": 3
+            },
+            {
+                "ruta": "assets/img/placeholders/impresos-carnelli-tienda-mobile.webp",
+                "alt": "Vista celular de la tienda online de Impresos Carnelli",
+                "tipo": "mobile",
+                "orden": 4
             }
         ],
         "destacado": 1,
@@ -53,14 +65,14 @@
             8,
             6
         ],
-        "resumen_corto": "Presencia digital completa combinando gestión de contenidos en redes sociales, tienda online con pasarela de pago integrada y alta optimizada en Google Maps.",
-        "desafio": "En el rubro de repuestos, los clientes necesitan encontrar rápido la empresa en Google Maps, confiar en la marca al ver sus redes sociales activas y poder comprar repuestos online pagando de forma segura sin demoras.",
-        "solucion": "Implementamos un trabajo integral: gestionamos el contenido de sus redes sociales para mantener una comunicación cercana y activa, desarrollamos su tienda online con pasarela de pago integrada para habilitar la venta directa y realizamos el alta y optimización de su Perfil de Empresa en Google Maps.",
-        "resultado": "Un ecosistema digital conectado donde las redes sociales, el buscador local de Google Maps y la tienda online trabajan juntos para captar consultas y concretar ventas.",
+        "resumen_corto": "Presencia digital completa desde Dolores (Soriano) para todo el país: gestión de contenidos en redes sociales, tienda online con pasarela de pago y alta optimizada en Google Maps.",
+        "desafio": "En el rubro de repuestos para máquinas de jardín y equipos a motor, los clientes necesitan encontrar rápido a la empresa en Google Maps, confiar en la marca al ver sus redes activas y poder comprar repuestos online con envíos a todo el país.",
+        "solucion": "Implementamos un trabajo integral: gestionamos el contenido de sus redes sociales, desarrollamos su tienda online (repuestosdellitoral.com) con catálogo minorista/mayorista y pasarela de pago integrada, y optimizamos su Perfil de Empresa en Google Maps.",
+        "resultado": "Un ecosistema digital conectado donde las redes sociales, el buscador local de Google Maps y la tienda online trabajan juntos para captar consultas y concretar ventas en todo Uruguay.",
         "metricas": [],
-        "url_en_vivo": "",
+        "url_en_vivo": "https://repuestosdellitoral.com/",
         "imagen_portada": "assets/img/placeholders/repuestos-del-litoral-cover.webp",
-        "imagen_portada_alt": "Mockup de tienda online y presencia digital de Repuestos del Litoral",
+        "imagen_portada_alt": "Tienda online desarrollada para Repuestos del Litoral",
         "galeria": [
             {
                 "ruta": "assets/img/placeholders/repuestos-del-litoral-cover.webp",
@@ -70,7 +82,7 @@
             },
             {
                 "ruta": "assets/img/placeholders/repuestos-del-litoral-mobile.webp",
-                "alt": "Vista móvil del e-commerce y perfil de Repuestos del Litoral",
+                "alt": "Vista móvil del e-commerce de Repuestos del Litoral",
                 "tipo": "mobile",
                 "orden": 2
             }
@@ -92,14 +104,14 @@
         "servicios_ids": [
             8
         ],
-        "resumen_corto": "Desarrollo de tienda online e-commerce con catálogo organizado por categorías y pasarela de pago integrada para la venta de equipamiento informático.",
-        "desafio": "Para comercializar productos de informática y tecnología, el cliente necesitaba un canal de ventas propio donde los usuarios pudieran explorar el catálogo actualizado, comparar especificaciones y abonar directamente con medios electrónicos.",
-        "solucion": "Diseñamos y programamos una tienda online ágil, adaptable a dispositivos móviles y escritorio, con búsqueda rápida por categorías e integración completa de pasarela de pago.",
-        "resultado": "Canal de venta online activo las 24 horas con proceso de compra claro y autogestión simple del catálogo de productos.",
+        "resumen_corto": "Desarrollo de tienda online e-commerce con pasarela de pago y presentación de servicios técnicos e infraestructura para pymes en Atlántida, Canelones.",
+        "desafio": "Para comercializar equipamiento informático (memorias RAM, discos SSD, notebooks, cámaras CCTV) y presentar sus planes de soporte técnico en Atlántida y Canelones, el cliente necesitaba una plataforma propia rápida y con compra online.",
+        "solucion": "Diseñamos y programamos su sitio y tienda online (redtecinformatica.com), adaptable a dispositivos móviles y escritorio, con catálogo organizado, pasarela de pago integrada y acceso rápido a cotizaciones por WhatsApp.",
+        "resultado": "Canal de venta online activo las 24 horas con proceso de compra claro y vidriera profesional para sus servicios técnicos.",
         "metricas": [],
-        "url_en_vivo": "",
+        "url_en_vivo": "https://redtecinformatica.com/",
         "imagen_portada": "assets/img/placeholders/redtec-informatica-cover.webp",
-        "imagen_portada_alt": "Mockup de la tienda online desarrollada para RedTec Informática",
+        "imagen_portada_alt": "Tienda online desarrollada para RedTec Informática en Atlántida",
         "galeria": [
             {
                 "ruta": "assets/img/placeholders/redtec-informatica-cover.webp",
@@ -109,7 +121,7 @@
             },
             {
                 "ruta": "assets/img/placeholders/redtec-informatica-mobile.webp",
-                "alt": "Vista celular del carrito de compras de RedTec Informática",
+                "alt": "Vista celular de la tienda online de RedTec Informática",
                 "tipo": "mobile",
                 "orden": 2
             }
@@ -118,7 +130,7 @@
         "orden": 3,
         "publicado": 1,
         "meta_title": "Caso de Estudio: RedTec Informática (Tienda Online) | Carnelli Studio",
-        "meta_description": "Desarrollo de tienda online con pasarela de pago para RedTec Informática en Uruguay."
+        "meta_description": "Desarrollo de tienda online con pasarela de pago para RedTec Informática en Atlántida, Canelones."
     },
     {
         "id": 4,
@@ -132,14 +144,14 @@
             7,
             11
         ],
-        "resumen_corto": "Diseño y desarrollo de landing page orientada a la generación de presupuestos junto con asesoramiento digital personalizado.",
-        "desafio": "La compra de una piscina es una decisión importante donde el cliente busca ver modelos claros, entender el proceso de instalación y comunicarse rápido para pedir una cotización según su terreno.",
-        "solucion": "Creamos una landing page visual, rápida en celulares y enfocada en presentar los modelos y facilitar el contacto directo por WhatsApp y formulario, acompañada de asesoramiento digital para ordenar su presencia online.",
-        "resultado": "Presentación profesional de la marca y un flujo directo para recibir solicitudes de presupuesto calificadas.",
+        "resumen_corto": "Diseño y desarrollo de landing page orientada a la generación de presupuestos de piscinas de fibra en Colonia y litoral sur, junto con asesoramiento digital.",
+        "desafio": "La compra e instalación de una piscina de fibra es una decisión familiar importante donde el cliente busca ver los modelos disponibles, conocer las obras instaladas y contactarse rápido por WhatsApp para coordinar una visita técnica.",
+        "solucion": "Creamos una landing page visual y rápida en celulares (piscinasmontero.com) enfocada en presentar el catálogo de modelos, las preguntas frecuentes y facilitar el contacto directo por WhatsApp, acompañada de asesoramiento digital.",
+        "resultado": "Presentación profesional de la marca oficial en Colonia y zona de influencia, con un flujo directo para recibir solicitudes de presupuesto.",
         "metricas": [],
-        "url_en_vivo": "",
+        "url_en_vivo": "https://piscinasmontero.com/",
         "imagen_portada": "assets/img/placeholders/piscinas-fiji-cover.webp",
-        "imagen_portada_alt": "Mockup de la landing page desarrollada para Piscinas Fiji",
+        "imagen_portada_alt": "Landing page desarrollada para Piscinas Fiji",
         "galeria": [
             {
                 "ruta": "assets/img/placeholders/piscinas-fiji-cover.webp",
@@ -163,34 +175,41 @@
     {
         "id": 5,
         "slug": "fisiolink",
-        "titulo": "FisioLink: [COMPLETAR qué se hizo]",
+        "titulo": "FisioLink: Plataforma web para conectar pacientes con fisioterapeutas a domicilio",
         "cliente_id": 5,
         "cliente_nombre": "FisioLink",
         "rubro": "Salud y Fisioterapia",
         "anio": 2026,
         "servicios_ids": [
-            7
+            7,
+            9
         ],
-        "resumen_corto": "[COMPLETAR qué se hizo — editable desde el panel de administración]",
-        "desafio": "[COMPLETAR el desafío del proyecto FisioLink desde el Admin]",
-        "solucion": "[COMPLETAR la solución implementada para FisioLink desde el Admin]",
-        "resultado": "[COMPLETAR el resultado del proyecto FisioLink desde el Admin]",
+        "resumen_corto": "Presencia digital y plataforma web pensada para conectar pacientes con profesionales de fisioterapia y kinesiología a domicilio de forma simple desde el celular o la computadora.",
+        "desafio": "Explicar de forma clara e intuitiva un servicio innovador donde el paciente puede buscar a su fisioterapeuta, agendar y abonar su sesión online para recibir la atención en su propio domicilio.",
+        "solucion": "Desarrollo de la presencia web de FisioLink (fisiolink.com) estructurando el recorrido en 3 pasos claros (conectar con el fisio, pagar fácilmente y recibir la sesión en casa), optimizada para celulares y escritorio.",
+        "resultado": "Una experiencia clara tanto para pacientes que buscan reservar su cita como para profesionales colaboradores que se integran a la plataforma.",
         "metricas": [],
-        "url_en_vivo": "",
+        "url_en_vivo": "https://fisiolink.com/",
         "imagen_portada": "assets/img/placeholders/fisiolink-cover.webp",
-        "imagen_portada_alt": "Proyecto FisioLink por Carnelli Studio",
+        "imagen_portada_alt": "Sitio web y plataforma FisioLink",
         "galeria": [
             {
                 "ruta": "assets/img/placeholders/fisiolink-cover.webp",
-                "alt": "Vista escritorio del proyecto FisioLink",
+                "alt": "Vista escritorio de FisioLink (fisiolink.com)",
                 "tipo": "desktop",
                 "orden": 1
+            },
+            {
+                "ruta": "assets/img/placeholders/fisiolink-mobile.webp",
+                "alt": "Vista celular de FisioLink",
+                "tipo": "mobile",
+                "orden": 2
             }
         ],
-        "destacado": 0,
+        "destacado": 1,
         "orden": 5,
-        "publicado": 0,
+        "publicado": 1,
         "meta_title": "Caso de Estudio: FisioLink | Carnelli Studio",
-        "meta_description": "Proyecto desarrollado para FisioLink por Carnelli Studio."
+        "meta_description": "Conocé el proyecto web desarrollado para FisioLink, plataforma de fisioterapia y kinesiología a domicilio."
     }
 ]
