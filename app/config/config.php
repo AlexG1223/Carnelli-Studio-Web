@@ -79,6 +79,6 @@ if ($configuredUrl === '' || (!$isLocal && str_contains($configuredUrl, 'localho
 define('APP_ENV', $appEnv);
 define('BASE_URL', rtrim($configuredUrl, '/'));
 define('BASE_PATH', $scriptDir);
-define('ASSETS_VERSION', '2.4.0');
+define('ASSETS_VERSION', '2.5.0');
 define('DATA_PATH', APP_PATH . '/data');
 define('STORAGE_PATH', APP_PATH . '/storage');
