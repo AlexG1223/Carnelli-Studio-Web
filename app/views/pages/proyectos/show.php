@@ -110,55 +110,6 @@ $metricas = $proyecto['metricas'] ?? [];
         </div>
     </section>
 
-    <!-- Galería con Lightbox accesible (teclado + swipe) -->
-    <?php if (!empty($galeria)): ?>
-    <section class="section section--alt" aria-labelledby="gallery-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="eyebrow">VISTAS DEL PROYECTO</span>
-                <h2 id="gallery-heading" class="section-title">Galería desktop y mobile</h2>
-                <p class="section-subtitle">Tocá cualquier imagen para ampliarla en pantalla completa.</p>
-            </div>
-
-            <div class="case-gallery" id="case-gallery">
-                <?php foreach ($galeria as $idx => $img): ?>
-                    <figure class="case-gallery__item case-gallery__item--<?= View::e($img['tipo'] ?? 'desktop') ?>">
-                        <button
-                            type="button"
-                            class="case-gallery__trigger"
-                            data-lightbox-src="<?= View::asset($img['ruta'], false) ?>"
-                            data-lightbox-alt="<?= View::e($img['alt']) ?>"
-                            data-lightbox-index="<?= $idx ?>"
-                            aria-label="Ampliar imagen: <?= View::e($img['alt']) ?>"
-                        >
-                            <img
-                                src="<?= View::asset($img['ruta']) ?>"
-                                alt="<?= View::e($img['alt']) ?>"
-                                width="700"
-                                height="480"
-                                loading="lazy"
-                            >
-                            <span class="case-gallery__badge"><?= ($img['tipo'] ?? 'desktop') === 'mobile' ? 'Vista Celular' : 'Vista Escritorio' ?></span>
-                        </button>
-                        <figcaption class="case-gallery__caption"><?= View::e($img['alt']) ?></figcaption>
-                    </figure>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal Lightbox accesible -->
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes del proyecto" hidden>
-        <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Cerrar galería">×</button>
-        <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Imagen anterior">‹</button>
-        <div class="lightbox__stage">
-            <img src="" alt="" class="lightbox__img" id="lightbox-img">
-            <p class="lightbox__caption" id="lightbox-caption"></p>
-        </div>
-        <button type="button" class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Imagen siguiente">›</button>
-    </div>
-    <?php endif; ?>
-
     <!-- Testimonio vinculado al proyecto (solo si existe y está publicado) -->
     <?php if (!empty($testimonio)): ?>
     <section class="section">
