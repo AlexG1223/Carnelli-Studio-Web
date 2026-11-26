@@ -26,9 +26,26 @@ function initMobileNav() {
     const nav    = document.getElementById('site-nav');
     if (!toggle || !nav) return;
 
+    const closeMenu = () => {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    };
+
     toggle.addEventListener('click', () => {
         const isOpen = nav.classList.toggle('is-open');
         toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 1024) {
+            closeMenu();
+        }
     });
 }
 
